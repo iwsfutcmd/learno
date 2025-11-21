@@ -23,7 +23,9 @@
 		showWeight,
 		addInversions,
 		offline,
-		sortedAnswers
+		sortedAnswers,
+		fromFontSize,
+		toFontSize
 	} from '../stores';
 	import scriptDirectionJson from '$lib/scriptDirection.json';
 	const scriptDirection = scriptDirectionJson as { [key: string]: string };
@@ -273,7 +275,12 @@
 		</div>
 	</header>
 	<main>
-		<div class="prompt" style:font-family={$fromFont}>
+		<div
+			class="prompt"
+			style:font-family={$fromFont}
+			style:font-size={`${$fromFontSize}pt`}
+			dir={fromDir === 'rtl' ? 'rtl' : 'ltr'}
+		>
 			{prompt?.replace(' ', '\u00A0') ?? '\u00A0'}
 		</div>
 		<div
@@ -287,6 +294,7 @@
 				{@const disabled = mistakes.includes(answer)}
 				<button
 					{disabled}
+					style:font-size={`${$toFontSize}pt`}
 					class:correct={selectedCorrectAnswer && answer === questions[prompt]}
 					on:click={() => selectAnswer(answer)}
 				>
@@ -348,16 +356,7 @@
 		</div>
 	</footer>
 	{#if optionsOpen}
-		<LangPicker
-			onClose={() => (optionsOpen = false)}
-			{transliterate}
-			displayHardMode={false}
-			displayLineHeight={false}
-			displayKeySize={false}
-			displayShowWeight={true}
-			displayAddInversions={true}
-			displaySortedAnswers={true}
-		/>
+		<LangPicker onClose={() => (optionsOpen = false)} {transliterate} />
 	{/if}
 </div>
 

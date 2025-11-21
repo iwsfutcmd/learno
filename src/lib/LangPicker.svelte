@@ -54,16 +54,7 @@
 		}
 	});
 	export let onClose: () => void;
-	export let soundo = false;
-	export let translo = false;
 	export let transliterate = (from: string, to: string, text: string) => '';
-	export let displayHardMode = true;
-	export let displayRandomizeFromFont = true;
-	export let displayLineHeight = true;
-	export let displayKeySize = true;
-	export let displayShowWeight = false;
-	export let displayAddInversions = false;
-	export let displaySortedAnswers = false;
 	let conjunctsIndeterminate: boolean;
 	let conjunctsChecked: boolean;
 	let indepVowelsIndeterminate: boolean;
@@ -73,16 +64,6 @@
 	let localeString: string;
 	let locale: Schema;
 
-	const soundoFromLocaleStrings = ['ltc-Latn', 'la-Latn'];
-
-	// if (soundo) {
-	// 	$baseLocaleString = soundoFromLocaleStrings.includes($baseLocaleString)
-	// 		? $baseLocaleString
-	// 		: soundoFromLocaleStrings[0];
-	// 	$fromLocaleString = soundoFromLocaleStrings.includes($fromLocaleString)
-	// 		? $fromLocaleString
-	// 		: soundoFromLocaleStrings[0];
-	// }
 	let baseLanguage = $baseLocale.language ?? '';
 	const baseLanguages = Object.keys(langScriptMap)
 		.sort()
@@ -164,7 +145,6 @@
 <div class="lang-picker-container">
 	<button class="lang-picker-background" on:click={onClose} />
 	<div class="lang-picker" transition:slide|global>
-		<!-- {#if !soundo} -->
 		<div class="wordlist-lang-picker picker">
 			<div class="option-button">
 				<label for="base-lang">
@@ -191,25 +171,20 @@
 				</label>
 			</div>
 		</div>
-		<!-- {/if} -->
 		<div class="picker">
 			<select class="option-button from-locale" bind:value={$fromLocaleString}>
-				{#each soundo ? soundoFromLocaleStrings : fromLocaleStrings as localeString}
+				{#each fromLocaleStrings as localeString}
 					<option value={localeString}>{localeString}</option>
 				{/each}
 			</select>
-			{#if translo}
-				<button
-					class="material-symbols-outlined"
-					on:click={() => {
-						const temp = $fromLocaleString;
-						$fromLocaleString = $toLocaleString;
-						$toLocaleString = temp;
-					}}>keyboard_double_arrow_right</button
-				>
-			{:else}
-				<span class="material-symbols-outlined">keyboard_double_arrow_right</span>
-			{/if}
+			<button
+				on:click={() => {
+					let localeString = $fromLocaleString;
+					$fromLocaleString = $toLocaleString;
+					$toLocaleString = localeString;
+				}}
+				class="material-symbols-outlined">keyboard_double_arrow_right</button
+			>
 			<select class="option-button to-locale" bind:value={$toLocaleString}>
 				{#each toLocaleStrings as localeString}
 					<option value={localeString}>{localeString}</option>
@@ -301,87 +276,45 @@
 						{$withCase === 1
 							? scriptExemplars[$fromLocale.script ?? ''].toLowerCase()
 							: $withCase === 2
-							? scriptExemplars[$fromLocale.script ?? ''].toUpperCase()
-							: scriptExemplars[$fromLocale.script ?? ''].toUpperCase() +
-							  scriptExemplars[$fromLocale.script ?? ''].toLowerCase()}
+								? scriptExemplars[$fromLocale.script ?? ''].toUpperCase()
+								: scriptExemplars[$fromLocale.script ?? ''].toUpperCase() +
+									scriptExemplars[$fromLocale.script ?? ''].toLowerCase()}
 					</button>
 				</form>
 			{/if}
 		</div>
 
 		<div class="options picker">
-			{#if displayHardMode}
-				<form>
-					<input
-						class="binary"
-						type="checkbox"
-						id="hard-mode"
-						bind:checked={$hardMode}
-						on:change={() => ($revealDiff = !$revealDiff)}
-					/>
-					<label class="option-button icon" for="hard-mode">
-						<span class="material-symbols-outlined"
-							>{$hardMode ? 'visibility_off' : 'visibility'}</span
-						>
-					</label>
-				</form>
-			{/if}
-			{#if displayRandomizeFromFont}
-				<form>
-					<input
-						class="binary"
-						type="checkbox"
-						id="randomize-from-font"
-						bind:checked={$randomizeFromFont}
-					/>
-					<label class="option-button overlap icon" for="randomize-from-font">
-						<div class="material-symbols-outlined" style:font-size="0.75rem">glyphs</div>
-						<div class="material-symbols-outlined">cycle</div>
-					</label>
-				</form>
-			{/if}
-			{#if displayLineHeight}
-				<form>
-					<button class="option-button icon" on:click={() => ($lineHeight = ($lineHeight + 1) % 3)}>
-						<span class="material-symbols-outlined">format_line_spacing</span>
-					</button>
-				</form>
-			{/if}
-			{#if displayKeySize}
-				<form>
-					<button
-						class="option-button overlap icon"
-						on:click={() => ($keySize = ($keySize + 1) % 3)}
-					>
-						<div class="material-symbols-outlined" style:font-size="1rem">expand_content</div>
-						<div class="material-symbols-outlined">crop_square</div>
-					</button>
-				</form>
-			{/if}
-			{#if displayShowWeight}
-				<form>
-					<input class="binary" type="checkbox" id="show-weight" bind:checked={$showWeight} />
-					<label class="option-button icon" for="show-weight">
-						<div class="material-symbols-outlined">scale</div>
-					</label>
-				</form>
-			{/if}
-			{#if displayAddInversions}
-				<form>
-					<input class="binary" type="checkbox" id="add-inversions" bind:checked={$addInversions} />
-					<label class="option-button icon" for="add-inversions">
-						<div class="material-symbols-outlined">compare_arrows</div>
-					</label>
-				</form>
-			{/if}
-			{#if displaySortedAnswers}
-				<form>
-					<input class="binary" type="checkbox" id="sorted-answers" bind:checked={$sortedAnswers} />
-					<label class="option-button icon" for="sorted-answers">
-						<div class="material-symbols-outlined">sort</div>
-					</label>
-				</form>
-			{/if}
+			<form>
+				<input
+					class="binary"
+					type="checkbox"
+					id="randomize-from-font"
+					bind:checked={$randomizeFromFont}
+				/>
+				<label class="option-button overlap icon" for="randomize-from-font">
+					<div class="material-symbols-outlined" style:font-size="0.75rem">glyphs</div>
+					<div class="material-symbols-outlined">cycle</div>
+				</label>
+			</form>
+			<form>
+				<input class="binary" type="checkbox" id="show-weight" bind:checked={$showWeight} />
+				<label class="option-button icon" for="show-weight">
+					<div class="material-symbols-outlined">scale</div>
+				</label>
+			</form>
+			<form>
+				<input class="binary" type="checkbox" id="add-inversions" bind:checked={$addInversions} />
+				<label class="option-button icon" for="add-inversions">
+					<div class="material-symbols-outlined">compare_arrows</div>
+				</label>
+			</form>
+			<form>
+				<input class="binary" type="checkbox" id="sorted-answers" bind:checked={$sortedAnswers} />
+				<label class="option-button icon" for="sorted-answers">
+					<div class="material-symbols-outlined">sort</div>
+				</label>
+			</form>
 		</div>
 	</div>
 </div>

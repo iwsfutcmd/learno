@@ -48,6 +48,8 @@ export const showWeight = writable(false);
 export const addInversions = writable(false);
 export const offline = writable(true);
 export const sortedAnswers = writable(false);
+export const fromFontSize = writable(64);
+export const toFontSize = writable(32);
 
 hardMode.subscribe(() => {
 	score.set(0);
@@ -82,6 +84,16 @@ if (browser) {
 	sortedAnswers.set(url.searchParams.get('sort') === 'y');
 	sortedAnswers.subscribe((val) => {
 		url.searchParams.set('sort', val ? 'y' : 'n')
+		window.history.pushState({}, '', url);
+	})
+	fromFontSize.set(parseInt(url.searchParams.get('fromFontSize') ?? '64'));
+	fromFontSize.subscribe((val) => {
+		url.searchParams.set('fromFontSize', val.toString())
+		window.history.pushState({}, '', url);
+	})
+	toFontSize.set(parseInt(url.searchParams.get('toFontSize') ?? '32'));
+	toFontSize.subscribe((val) => {
+		url.searchParams.set('toFontSize', val.toString())
 		window.history.pushState({}, '', url);
 	})
 	fromCharsMap.set(JSON.parse(localStorage.getItem('fromCharsMap') || '{}'));
