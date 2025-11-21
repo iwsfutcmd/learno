@@ -1,0 +1,90 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: Tamil_InterIndic.txt
+# Generated from CLDR
+#
+
+# Tamil-InterIndic
+:: NFD;
+ொ→\uE04A;# VOWEL SIGN O
+ோ→\uE04B;# VOWEL SIGN OO
+ௌ→\uE04C;# VOWEL SIGN AU
+ஔ→\uE014;# LETTER AU
+\U00011301→\uE001;
+\u0B82→\uE002;      # SIGN ANUSVARA
+ஃ→\uE003;      # SIGN VISARGA
+\U00011303→\uE003;
+அ→\uE005;      # LETTER A
+ஆ→\uE006;      # LETTER AA
+இ→\uE007;      # LETTER I
+ஈ→\uE008;      # LETTER II
+உ→\uE009;      # LETTER U
+ஊ→\uE00A;      # LETTER UU
+எ→\uE00E;      # LETTER E
+ஏ→\uE00F;      # LETTER EE
+ஐ→\uE010;      # LETTER AI
+ஒ→\uE012;      # LETTER O
+ஓ→\uE013;      # LETTER OO
+ஔ→\uE014;    # LETTER AU
+க→\uE015;      # LETTER KA
+ங→\uE019;      # LETTER NGA
+ச→\uE01A;      # LETTER CA
+ஜ→\uE01C;      # LETTER JA
+ஞ→\uE01E;      # LETTER NYA
+ட→\uE01F;      # LETTER TTA
+ண→\uE023;      # LETTER NNA
+த→\uE024;      # LETTER TA
+ந→\uE028;      # LETTER NA
+ன→\uE029;      # LETTER NNNA
+ப→\uE02A;      # LETTER PA
+ம→\uE02E;      # LETTER MA
+ய→\uE02F;      # LETTER YA
+ர→\uE030;      # LETTER RA
+ற→\uE031;      # LETTER RRA
+ல→\uE032;      # LETTER LA
+ள→\uE033;      # LETTER LLA
+ழ→\uE034;      # LETTER LLLA
+வ→\uE035;      # LETTER VA
+ஶ→\uE036;      # LETTER SHA
+ஷ→\uE037;      # LETTER SSA
+ஸ→\uE038;      # LETTER SA
+ஹ→\uE039;      # LETTER HA
+\U0001133C→\uE03C;
+ா→\uE03E;      # VOWEL SIGN AA
+ி→\uE03F;      # VOWEL SIGN I
+\u0BC0→\uE040;      # VOWEL SIGN II
+ு→\uE041;      # VOWEL SIGN U
+ூ→\uE042;      # VOWEL SIGN UU
+ெ→\uE046;      # VOWEL SIGN E
+ே→\uE047;      # VOWEL SIGN EE
+ை→\uE048;      # VOWEL SIGN AI
+ொ→\uE04A;
+ோ→\uE04B;
+ௌ→\uE04C;
+\u0BCD→\uE085;      # KILLER
+\u0BD0→\uE050;
+\u0951→\uE051;
+\u0952→\uE052;
+ௗ→\uE057;      # AU LENGTH MARK
+।→\uE064;
+॥→\uE065;
+௧→\uE067;      # DIGIT ONE
+௨→\uE068;      # DIGIT TWO
+௩→\uE069;      # DIGIT THREE
+௪→\uE06A;      # DIGIT FOUR
+௫→\uE06B;      # DIGIT FIVE
+௬→\uE06C;      # DIGIT SIX
+௭→\uE06D;      # DIGIT SEVEN
+௮→\uE06E;      # DIGIT EIGHT
+௯→\uE06F;      # DIGIT NINE
+௰→\uE067\uE066;          # UNMAPPED Tamil-InterIndic: NUMBER TEN
+௱→\uE067\uE066\uE066;     # UNMAPPED Tamil-InterIndic: NUMBER ONE HUNDRED
+௲→\uE067\uE066\uE066\uE066;# UNMAPPED Tamil-InterIndic: NUMBER ONE THOUSAND
+\u0BE6→\uE066;
+௹→\uE074;
+\U00011FFF→\uE0C6;
+#    :: NFC (NFD) ;
+# eof
+

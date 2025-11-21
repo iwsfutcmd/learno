@@ -1,0 +1,331 @@
+$sb = \uE000; # \.; # syllable break
+$sc = \uE001; # \-; # semiclosed
+$so = \uE002; # \=; # semiopen
+$ps = \uE003; # \u0301; # primary stress
+$ss = \uE004; # \u0300; # secondary stress
+$sv = \uE005; # \u0306; # semivowel mark
+$wb = \uE006; # \|; # word boundary
+$vl = \uE007; # \u0304 # en long vowel
+$vs = \uE008; # \u0306 # en short vowel
+#$vr = \uE009; # \u0309 # en reduced vowel
+$latin = [A-ZΘÆŒ\u0304$sb$so$ps$ss$sv$sc];
+$shortvowel = [AEIOUY];
+$longvowel = [{Ā}{Ē}{Ī}{Ō}{Ū}{Ȳ}];
+$diphthong = [{AI}{AE}{AU}{EI}{EU}{OE}{UI}{YI}];
+$scshortvowel = [{A$sc}{E$sc}{I$sc}{O$sc}{U$sc}{Y$sc}];
+$sclongvowel = [{Ā$sc}{Ē$sc}{Ī$sc}{Ō$sc}{Ū$sc}{Ȳ$sc}];
+$scdiphthong = [{AI$sc}{AE$sc}{AU$sc}{EI$sc}{EU$sc}{OE$sc}{UI$sc}{YI$sc}];
+$scvowel = [$scshortvowel$sclongvowel$scdiphthong];
+$soshortvowel = [{A$so}{E$so}{I$so}{O$so}{U$so}{Y$so}];
+$solongvowel = [{Ā$so}{Ē$so}{Ī$so}{Ō$so}{Ū$so}{Ȳ$so}];
+$sodiphthong = [{AI$so}{AE$so}{AU$so}{EI$so}{EU$so}{OE$so}{UI$so}{YI$so}];
+$sovowel = [$soshortvowel$solongvowel$sodiphthong];
+#$v = [$scvowel$sovowel$longvowel$diphthong$shortvowel];
+$v = [$longvowel$diphthong$shortvowel];
+$voiced = [BDGJLMNRVWZƷŊ];
+$voiceless = [CFHKPQSTΘƩX];
+$c = [$voiced$voiceless];
+$doubled = [{BB}{DD}{GG}{JJ}{LL}{MM}{NN}{RR}{VV}{WW}{ZZ}{CC}{FF}{HH}{KK}{PP}{QQ}{SS}{TT}{ΘΘ}{XX}];
+:: NFD;
+:: upper;
+
+# word boundaries
+
+[^$latin] { ($latin+) } [^$latin] > $wb $1 $wb;
+
+:: null;
+
+# normalization
+
+X > CS;
+PH > F;
+TH > Θ;
+CH > X;
+Æ > AE;
+Œ > OE;
+QU > CW;
+GU } $v > GW;
+SU } $v > SW;
+RH > R;
+
+:: null;
+
+$wb { BD > D;
+$wb { TM > M;
+$wb { [CGMP]N > N;
+$wb { PS > S;
+$wb { [CP]T > T;
+$wb { [FX]Θ > Θ;
+$wb { CS > Z;
+
+:: null;
+
+# syllabification
+
+# $wb { ($c* $v) } $doubled > $1 $sc;
+# ($v) (S [BDGVZCFHKPQTΘX] $c*) > $1 $so $sb $2;
+($shortvowel) ($shortvowel) \u0308 > $1 $sb $2;
+# ($shortvowel) ($shortvowel) } $c [$c$wb] > $1 $sb $2;
+($v) } $v > $1 $sb;
+$v { ([BDGVZCFKPTΘX] R) } $v > $sb $1;
+$v { (CW) } $v > $sb $1;
+$v { ([CXGP] L) } $v > $sb $1;
+$v { ($c) ($c+) } $v > $1 $sb $2;
+$v { ($c) } $v > $sb $1;
+
+:: null;
+$wb { ([$latin]) } $wb> $sb $1 $sb; 
+$wb { ([$latin]) > $sb $1; 
+([$latin]) } $wb > $1 $sb; 
+:: null;
+
+# stress placement 
+
+# primary stress
+
+# one syllable
+$wb { ($sb $c* $v) ($c* $sb) } $wb > $1 $ps $2;
+# two syllable
+$wb { ($sb $c* $v) ($c* $sb $c* $v $c* $sb) } $wb > $1 $ps $2;
+# three+ syllable long penult
+($v $c* $sb $c* [$longvowel $diphthong]) ($c* $sb $c* $v $c* $sb) } $wb > $1 $ps $2;
+# three+ syllable closed penult
+($v $c* $sb $c* $v) ($c+ $sb $c* $v $c* $sb) } $wb > $1 $ps $2;
+# three+ syllable penult + <Z>
+($v $c* $sb $c* $v) ($sb Z $c* $v $c* $sb) } $wb > $1 $ps $2;
+# three+ syllable short open penult
+($v) ($c* $sb $c* $shortvowel $sb $c* $v $c* $sb) } $wb > $1 $ps $2;
+
+:: null;
+
+# secondary stress
+
+# two syllables before primary stress
+$wb { ($sb $c* $v) ($c* $sb $c* $v $c* $sb $c* $v $ps) > $1 $ss $2;
+# three+ syllable long penult
+($v $c* $sb $c* [$longvowel $diphthong]) ($c* $sb $c* $v $c* $sb $c* $sb $c* $v $ps) > $1 $ss $2;
+# three+ syllable closed penult
+($v $c* $sb $c* $v) ($c+ $sb $c* $v $c* $sb $c* $v $ps) > $1 $ss $2;
+# three+ syllable penult + <Z>
+($v $c* $sb $c* $v) ($sb Z $c* $v $c* $sb $c* $v $ps) > $1 $ss $2;
+# three+ syllable short open penult
+($v) ($c* $sb $c* $shortvowel $c* $sb $c* $v $c* $sb $c* $v $ps) > $1 $ss $2;
+
+:: null;
+
+# blow out macrons
+\u0304 > ;
+
+:: null;
+
+# semivowelization
+
+$v [$ps$ss]? $c* $sb $c* { ([E{AE}{OE}I{EI}Y]) } $sb $v > $1 $sv;
+
+:: null;
+
+# consonants
+
+J > DƷ;
+$wb $sb { E ([$ps$ss]?) C $sb S H? > E $1 G $sb Z;
+$v [$ps$ss] $sb { H } $v > ;
+C $sb S { H > ;
+$v [$ps$ss]? $sb { S } [$v$voiced] > Z;
+$voiced { S } $sb $wb > Z;
+
+:: null;
+
+
+# palatalization 1
+
+[^ST] ($sb?) { T } I $sv > S;
+
+:: null;
+
+# palatalization 2
+
+C } [E{AE}{OE}IY] > S;
+G } [E{AE}{OE}IY] > DƷ;
+N } ($sb?) [CKG] > Ŋ;
+
+:: null;
+
+# palatalization 3
+
+S } [IE] $sv > Ʃ;
+T } [IE] $sv > TƩ;
+Z } [IE] $sv > Ʒ;
+
+:: null;
+
+# palatalization 4
+
+# (after vowels)
+
+:: null;
+
+# vowels
+
+# mergers
+
+[AO]?EI > E; # checkme
+[AO]E > E;
+Y > I;
+EU > U;
+
+:: null;
+
+# semivowels
+
+$v $sv $sb E } S? $sb $wb > iː;
+# [ƩƷ] { $v $sv > ;
+$v $sv > iː;
+
+# diphthongs
+
+AI > eɪ;
+AU > ɔː;
+#EI > aɪ;
+OI > ɔɪ;
+OU > aʊ;
+
+# long vowels
+
+([AEIO]) } $ps $sb ([^$sb$wb]* $sb)? $wb > $1 $vl;
+([AEO]) } [$ps$ss]? $sb $c* $v $sv > $1 $vl;
+([AOEI]) } [$ps$ss]? $sb $v > $1 $vl;
+
+# short vowels
+
+([AEIO]) } $ps $c+ $sb ([^$sb$wb]* $sb)? $wb > $1 $vs;
+([AEIO]) } $ps $c* $sb [^$sb$wb]* $sb [^$sb$wb]* $sb $wb > $1 $vs;
+([AEIO]) } $ss > $1 $vs;
+$v $c* $sb $c* { ([AEIO]) } $c+ $sb $c* $v [$ps$ss] > $1 $vs;
+$wb $sb $c* { ([AEIO]) } $c+ $sb $c* $v [$ps$ss] > $1 $vs;
+
+:: null;
+
+# special cases
+
+$wb $sb H { Y [$vl$vs]? } [$ps$ss]? $sb > aɪ;
+$wb $sb { O [$vl$vs]? } B $sb > ə;
+$wb $sb C { O [$vl$vs]? } [NM] $sb > ə;
+$wb $sb S { U [$vl$vs]? } $sb B  > ə;
+
+:: null;
+
+A $vl } [$ps$ss]? ($sb?) R > ɛ;
+A $vl > eɪ;
+E $vl } [$ps$ss]? ($sb?) R > ɪ;
+E $vl > iː;
+I $vl > aɪ;
+O $vl } [$ps$ss]? ($sb?) R > ɔ;
+O $vl > oʊ;
+
+W { A $vs } [$ps$ss]? ($sb?) R > ɔː;
+W { A $vs > ɒ;
+A $vs } [$ps$ss]? ($sb?) R > ɑː;
+A $vs > æ;
+E $vs } [$ps$ss]? ($sb?) R > ɜː;
+E $vs > ɛ;
+I $vs } [$ps$ss]? ($sb?) R > ɜː;
+I $vs > ɪ;
+O $vs } [$ps$ss]? ($sb?) R > ɔː;
+O $vs > ɒ;
+
+# reduced vowels
+
+# initial
+
+$wb $sb $c* { A > ə;
+$wb $sb $c* { [AO]?E > ɪ;
+#$wb $sb $c* { [IY] > ɪ; # trying to figure out a rule
+$wb $sb $c* { [IY] > aɪ;
+$wb $sb $c* { O > ə;
+
+# final
+
+A } $c $c+ $sb $wb > æ;
+A?E } $c $c+ $sb $wb > ɛ;
+[IY] } $c $c+ $sb $wb > ɪ;
+O } $c $c+ $sb $wb > ɒ;
+
+A } $sb $wb > ə;
+A?E } $sb $wb > i;
+[IY] } $sb $wb > aɪ;
+O } $sb $wb > oʊ;
+U } $sb $wb > juː;
+
+$v } [RL] $sb $wb > ə;
+A } T $sb $wb > æ;
+A } $c $sb $wb > ə;
+E } [MT] $sb $wb > ɛ; # also <ə>
+E } N $sb $wb > ə;
+I?ES } $sb $wb > iːz;
+EUS } $sb $wb > iːəs;
+I } [MST] $sb $wb > ɪ;
+O } [NST] $sb $wb > ɒ;
+
+$sb $c* { [AO] } [^$ps$ss] > ə;
+$sb $c* { [EIY] } [^$ps$ss] R > ə;
+$sb $c* { [EIY] } [^$ps$ss] > ɪ;
+
+# <U>
+
+#$wb $sb $c* r ($sb?) { E?U } [$ps$ss]? $sb R > ʊ;
+#$wb $sb $c* r ($sb?) { E?U } [$ps$ss] $sb [^$wb] > jə;
+#$wb $sb $c* r ($sb?) { E?U } [$ps$ss]? $sb > juː;
+
+[RL] ($sb?) { E?U } [$ps$ss]? $sb R > ʊ;
+E?U } [$ps$ss]? $sb R > jʊ;
+[RL] ($sb?) { E?U } $sb [^$wb] > ə;
+E?U } $sb [^$wb] > jə;
+[RL] ($sb?) { E?U } [$ps$ss]? $sb > uː;
+E?U } [$ps$ss]? $sb > juː;
+
+U } [$ps$ss] R > ɜː;
+U } [$ps$ss] $c > ʌ;
+$wb $sb $c* { U } $c > ʌ;
+$wb $sb $c* { U } $sb > ə;
+U } R > ə;
+U } $c > ə;
+
+:: null;
+
+[CX] > k;
+G > ɡ;
+
+:: lower;
+
+p ($sb?) p > $1 p;
+b ($sb?) b > $1 b;
+t ($sb?) t > $1 t;
+d ($sb?) d > $1 d;
+k ($sb?) k > $1 k;
+g ($sb?) g > $1 g;
+s ($sb?) s > $1 s;
+z ($sb?) z > $1 z;
+θ ($sb?) θ > $1 θ;
+l ($sb?) l > $1 l;
+m ($sb?) m > $1 m;
+n ($sb?) n > $1 n;
+f ($sb?) f > $1 f;
+h ($sb?) h > $1 h;
+r ($sb?) r > $1 r;
+w ($sb?) w > $1 w;
+z ($sb?) z > $1 z;
+ŋ ($sb?) ŋ > $1 ŋ;
+ʒ ($sb?) ʒ > $1 ʒ;
+ʃ ($sb?) ʃ > $1 ʃ;
+
+:: null;
+
+($sb) ([^$sb$ps]*) $ps > $1 ˈ $2;
+($sb) ([^$sb$ss]*) $ss > $1 ˌ $2;
+
+:: null;
+
+$sb > ;
+$wb > ;
+
+:: NFC;

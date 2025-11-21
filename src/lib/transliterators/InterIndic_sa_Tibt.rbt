@@ -1,0 +1,155 @@
+# InterIndic-sa_Tibt
+:: NFD (NFC) ;
+
+\uE04D\uE015 →  ྐ;  # LETTER KA
+\uE04D\uE016 →  ྑ;  # LETTER KHA
+\uE04D\uE017 →  ྒ;  # LETTER GA
+\uE04D\uE018 →  ྒྷ;  # LETTER GHA
+\uE04D\uE019 →  ྔ;  # LETTER NGA
+\uE04D\uE01A →  ྕ;  # LETTER CA
+\uE04D\uE01B →  ྖ;  # LETTER CHA
+\uE04D\uE01C →  ྗ;  # LETTER JA
+\uE04D\uE01D →  ྗྷ;  # LETTER JHA
+\uE04D\uE01E →  ྙ;  # LETTER NYA
+\uE04D\uE01F →  ྚ;  # LETTER TTA
+\uE04D\uE020 →  ྛ;  # LETTER TTHA
+\uE04D\uE021 →  ྜ;  # LETTER DDA
+\uE04D\uE022 →  ྜྷ;  # LETTER DDHA
+\uE04D\uE023 →  ྞ;  # LETTER NNA
+\uE04D\uE024 →  ྟ;  # LETTER TA
+\uE04D\uE025 →  ྠ;  # LETTER THA
+\uE04D\uE026 →  ྡ;  # LETTER DA
+\uE04D\uE027 →  ྡྷ;  # LETTER DHA
+\uE04D\uE028 →  ྣ;  # LETTER NA
+
+\uE04D\uE02A →  ྤ;  # LETTER PA
+\uE04D\uE02B →  ྥ;  # LETTER PHA
+\uE04D\uE02C →  ྦ;  # LETTER BA
+\uE04D\uE02D →  ྦྷ;  # LETTER BHA
+\uE04D\uE02E →  ྨ;  # LETTER MA
+\uE04D\uE02F →  ྱ;  # LETTER YA
+\uE04D\uE030 →  ྲ;  # LETTER RA
+
+\uE04D\uE032 →  ླ;  # LETTER LA
+\uE04D\uE033 →  ླ༹;  # LETTER LLA
+
+\uE04D\uE035 →  ྭ;  # LETTER VA
+\uE04D\uE036 →  ྴ;  # LETTER SHA
+\uE04D\uE037 →  ྵ;  # LETTER SSA
+\uE04D\uE038 →  ྶ;  # LETTER SA
+\uE04D\uE039 →  ྷ;  # LETTER HA
+
+
+\uE001 →  ྃ;  # SIGN CANDRABINDU
+\uE002 →  ཾ;  # SIGN ANUSVARA
+\uE003 →  ཿ;  # SIGN VISARGA
+
+\uE005 →  ཨ;  # LETTER A
+\uE006 →  ཨཱ;  # LETTER AA
+\uE007 →  ཨི;  # LETTER I
+\uE008 →  ཨཱི;  # LETTER II
+\uE009 →  ཨུ;  # LETTER U
+\uE00A →  ཨཱུ;  # LETTER UU
+\uE00B →  ཨྲྀ;  # LETTER VOCALIC R
+\uE00C →  ཨླྀ;  # LETTER VOCALIC L
+
+
+\uE00F →  ཨེ;  # LETTER E
+\uE010 →  ཨཻ;  # LETTER AI
+
+
+\uE013 →  ཨོ;  # LETTER O
+\uE014 →  ཨཽ;  # LETTER AU
+\uE015 →  ཀ;  # LETTER KA
+\uE016 →  ཁ;  # LETTER KHA
+\uE017 →  ག;  # LETTER GA
+\uE018 →  གྷ;  # LETTER GHA
+\uE019 →  ང;  # LETTER NGA
+\uE01A →  ཅ;  # LETTER CA
+\uE01B →  ཆ;  # LETTER CHA
+\uE01C →  ཇ;  # LETTER JA
+\uE01D →  ཇྷ;  # LETTER JHA
+\uE01E →  ཉ;  # LETTER NYA
+\uE01F →  ཊ;  # LETTER TTA
+\uE020 →  ཋ;  # LETTER TTHA
+\uE021 →  ཌ;  # LETTER DDA
+\uE022 →  ཌྷ;  # LETTER DDHA
+\uE023 →  ཎ;  # LETTER NNA
+\uE024 →  ཏ;  # LETTER TA
+\uE025 →  ཐ;  # LETTER THA
+\uE026 →  ད;  # LETTER DA
+\uE027 →  དྷ;  # LETTER DHA
+\uE028 →  ན;  # LETTER NA
+
+\uE02A →  པ;  # LETTER PA
+\uE02B →  ཕ;  # LETTER PHA
+\uE02C →  བ;  # LETTER BA
+\uE02D →  བྷ;  # LETTER BHA
+\uE02E →  མ;  # LETTER MA
+\uE02F →  ཡ;  # LETTER YA
+\uE030 →  ར;  # LETTER RA
+
+\uE032 →  ལ;  # LETTER LA
+\uE033 →  ལ༹;  # LETTER LLA
+
+\uE035 →  ཝ;  # LETTER VA
+\uE036 →  ཤ;  # LETTER SHA
+\uE037 →  ཥ;  # LETTER SSA
+\uE038 →  ས;  # LETTER SA
+\uE039 →  ཧ;  # LETTER HA
+
+
+
+\uE03D →  ྅;  # SIGN AVAGRAHA
+\uE03E →  ཱ;  # VOWEL SIGN AA
+\uE03F →  ི;  # VOWEL SIGN I
+\uE040 →  ཱི;  # VOWEL SIGN II
+\uE041 →  ུ;  # VOWEL SIGN U
+\uE042 →  ཱུ;  # VOWEL SIGN UU
+\uE043 →  ྲྀ;  # VOWEL SIGN VOCALIC R
+\uE044 →  ྲཱྀ;  # VOWEL SIGN VOCALIC RR
+
+
+\uE047 →  ེ;  # VOWEL SIGN E
+\uE048 →  ཻ;  # VOWEL SIGN AI
+
+
+\uE04B →  ོ;  # VOWEL SIGN O
+\uE04C →  ཽ;  # VOWEL SIGN AU
+\uE04D→  ྄; # SIGN VIRAMA
+\uE04E →  ྈ;  # JIHVAMULIYA
+\uE04F →  ྉ;  # UPADHMANIYA
+\uE050 →  ༀ;  # OM
+\uE051 →  \u0951;  # STRESS SIGN UDATTA
+\uE052 →  \u0952;  # STRESS SIGN ANUDATTA
+
+
+
+
+
+
+
+
+
+
+
+
+
+\uE060 →  ཨྲཱྀ;  # LETTER VOCALIC RR
+\uE061 →  ཨླཱྀ;  # LETTER VOCALIC LL
+\uE062 →  ླྀ;  # VOWEL SIGN VOCALIC L
+\uE063 →  ླཱྀ;  # VOWEL SIGN VOCALIC LL
+\uE064 →  །;  # DANDA
+\uE065 →  ༎;  # DOUBLE DANDA
+\uE066 →  ༠;  # DIGIT ZERO
+\uE067 →  ༡;  # DIGIT ONE
+\uE068 →  ༢;  # DIGIT TWO
+\uE069 →  ༣;  # DIGIT THREE
+\uE06A →  ༤;  # DIGIT FOUR
+\uE06B →  ༥;  # DIGIT FIVE
+\uE06C →  ༦;  # DIGIT SIX
+\uE06D →  ༧;  # DIGIT SEVEN
+\uE06E →  ༨;  # DIGIT EIGHT
+\uE06F →  ༩;  # DIGIT NINE
+
+:: NFD;

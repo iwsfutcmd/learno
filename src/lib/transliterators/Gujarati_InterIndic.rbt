@@ -1,0 +1,102 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: Gujarati_InterIndic.txt
+# Generated from CLDR
+#
+
+# Gujarati-InterIndic
+:: NFD;
+\u0A81→\uE001; # SIGN CANDRABINDU
+\u0A82→\uE002; # SIGN ANUSVARA
+ઃ→\uE003; # SIGN VISARGA
+અ→\uE005; # LETTER A
+આ→\uE006; # LETTER AA
+ઇ→\uE007; # LETTER I
+ઈ→\uE008; # LETTER II
+ઉ→\uE009; # LETTER U
+ઊ→\uE00A; # LETTER UU
+ઋ→\uE00B; # LETTER VOCALIC R
+ઌ→\uE00C; # LETTER VOCALLIC L
+ઍ→\uE00D; # VOWEL CANDRA E
+એ→\uE00F; # LETTER E
+ઐ→\uE010; # LETTER AI
+ઑ→\uE011; # VOWEL CANDRA O
+ઓ→\uE013; # LETTER O
+ઔ→\uE014; # LETTER AU
+ક→\uE015; # LETTER KA
+ખ→\uE016; # LETTER KHA
+ગ→\uE017; # LETTER GA
+ઘ→\uE018; # LETTER GHA
+ઙ→\uE019; # LETTER NGA
+ચ→\uE01A; # LETTER CA
+છ→\uE01B; # LETTER CHA
+જ→\uE01C; # LETTER JA
+ઝ→\uE01D; # LETTER JHA
+ઞ→\uE01E; # LETTER NYA
+ટ→\uE01F; # LETTER TTA
+ઠ→\uE020; # LETTER TTHA
+ડ→\uE021; # LETTER DDA
+ઢ→\uE022; # LETTER DDHA
+ણ→\uE023; # LETTER NNA
+ત→\uE024; # LETTER TA
+થ→\uE025; # LETTER THA
+દ→\uE026; # LETTER DA
+ધ→\uE027; # LETTER DHA
+ન→\uE028; # LETTER NA
+પ→\uE02A; # LETTER PA
+ફ→\uE02B; # LETTER PHA
+બ→\uE02C; # LETTER BA
+ભ→\uE02D; # LETTER BHA
+મ→\uE02E; # LETTER MA
+ય→\uE02F; # LETTER YA
+ર→\uE030; # LETTER RA
+લ→\uE032; # LETTER LA
+ળ→\uE033; # LETTER LLA
+વ→\uE035; # LETTER VA
+શ→\uE036; # LETTER SHA
+ષ→\uE037; # LETTER SSA
+સ→\uE038; # LETTER SA
+હ→\uE039; # LETTER HA
+\u0ABC→\uE03C; # SIGN NUKTA
+ઽ→\uE03D; # SIGN AVAGRAHA
+ા→\uE03E; # VOWEL SIGN AA
+િ→\uE03F; # VOWEL SIGN I
+ી→\uE040; # VOWEL SIGN II
+\u0AC1→\uE041; # VOWEL SIGN U
+\u0AC2→\uE042; # VOWEL SIGN UU
+\u0AC3→\uE043; # VOWEL SIGN VOCALIC R
+\u0AC4→\uE044; # VOWEL SIGN VOCALIC RR
+\u0AC5→\uE045; # VOWEL SIGN CANDRA E
+\u0AC7→\uE047; # VOWEL SIGN E
+\u0AC8→\uE048; # VOWEL SIGN AI
+ૉ→\uE049; # VOWEL SIGN CANDRA O
+ો→\uE04B; # VOWEL SIGN O
+ૌ→\uE04C; # VOWEL SIGN AU
+\u0ACD→\uE04D; # SIGN VIRAMA
+ૐ→\uE050; # OM
+ૠ→\uE060; # LETTER VOCALIC RR
+ૡ→\uE061; # LETTER VOCALIC LL
+૦→\uE066; # DIGIT ZERO
+૧→\uE067; # DIGIT ONE
+૨→\uE068; # DIGIT TWO
+૩→\uE069; # DIGIT THREE
+૪→\uE06A; # DIGIT FOUR
+૫→\uE06B; # DIGIT FIVE
+૬→\uE06C; # DIGIT SIX
+૭→\uE06D; # DIGIT SEVEN
+૮→\uE06E; # DIGIT EIGHT
+૯→\uE06F; # DIGIT NINE
+।→\uE064; # DANDA
+॥→\uE065; # DOUBLE DANDA
+૰→\uE070; # ABBREVIATION SIGN
+\u0951→\uE051;
+\u0952→\uE052;
+\u0AE2→\uE062;
+\u0AE3→\uE063;
+૱→\uE074;
+ૹ→\uE09D;
+#    :: NFC (NFD) ;
+# eof
+

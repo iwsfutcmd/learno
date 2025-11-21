@@ -1,0 +1,81 @@
+# © 2023 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# File: Thaana_Latin.txt
+#
+
+# References
+# ----------
+# [1] https://en.wikipedia.org/wiki/Thaana_alphabet
+$c=[\u0780-\u07A5\u07B1]; # Thaana consonants
+
+:: NFD (NFD);
+
+ނ←n̆;
+
+:: Null (Null);
+
+$1\u07B0 ← ($c) } [^\u07A6-\u07AF];
+
+:: Null (Null);
+
+ނ } $c→n̆;
+
+
+ޙ↔h̤;
+ޚ↔k͟h;
+ޜ↔ž;
+ޢ↔‘;
+ޣ↔ġ;
+ޥ↔w;
+ޛ↔ẕ;
+ޠ↔t̤;
+ޡ↔ẓ;
+ޘ↔s̱;
+ޤ↔q;
+ޞ↔s̤;
+ޟ↔ż;
+ޝ↔ś;
+
+އް↔\';
+އ→;
+ހ↔h;
+ށ↔ṣ;
+ނ↔n } [^\u0306];
+ރ↔r;
+ބ↔b;
+ޅ↔ḷ;
+ކ↔k;
+ވ↔v;
+މ↔m;
+ފ↔f;
+ދ↔d;
+ތ↔t;
+ލ↔l;
+ގ↔g;
+ޏ↔ñ;
+ސ↔s;
+ޑ↔ḍ;
+ޒ↔z;
+ޓ↔ṭ;
+ޔ↔y;
+ޕ↔p;
+ޖ↔j;
+ޗ↔c;
+ޱ↔ṇ;
+
+އ|$1←[^$c] { ([aeiou\u0304]);
+
+\u07A6↔a;
+\u07A7↔ā;
+\u07A8↔i;
+\u07A9↔ī;
+\u07AA↔u;
+\u07AB↔ū;
+\u07AC↔e;
+\u07AD↔ē;
+\u07AE↔o;
+\u07AF↔ō;
+\u07B0→;
+
+:: NFD (NFD);

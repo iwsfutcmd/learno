@@ -1,0 +1,112 @@
+:: NFD;
+\uE001	→	𑌁;
+\uE002	→	𑌂;
+\uE003	→	𑌃;
+
+\uE005	→	𑌅;
+\uE006	→	𑌆;
+\uE007	→	𑌇;
+\uE008	→	𑌈;
+\uE009	→	𑌉;
+\uE00A	→	𑌊;
+\uE00B	→	𑌋;
+\uE00C	→	𑌌;
+
+
+\uE00F	→	𑌏;
+\uE010	→	𑌐;
+
+
+\uE013	→	𑌓;
+\uE014	→	𑌔;
+\uE015	→	𑌕;
+\uE016	→	𑌖;
+\uE017	→	𑌗;
+\uE018	→	𑌘;
+\uE019	→	𑌙;
+\uE01A	→	𑌚;
+\uE01B	→	𑌛;
+\uE01C	→	𑌜;
+\uE01D	→	𑌝;
+\uE01E	→	𑌞;
+\uE01F	→	𑌟;
+\uE020	→	𑌠;
+\uE021	→	𑌡;
+\uE022	→	𑌢;
+\uE023	→	𑌣;
+\uE024	→	𑌤;
+\uE025	→	𑌥;
+\uE026	→	𑌦;
+\uE027	→	𑌧;
+\uE028	→	𑌨;
+
+\uE02A	→	𑌪;
+\uE02B	→	𑌫;
+\uE02C	→	𑌬;
+\uE02D	→	𑌭;
+\uE02E	→	𑌮;
+\uE02F	→	𑌯;
+\uE030	→	𑌰;
+
+\uE032	→	𑌲;
+\uE033	→	𑌳;
+
+\uE035	→	𑌵;
+\uE036	→	𑌶;
+\uE037	→	𑌷;
+\uE038	→	𑌸;
+\uE039	→	𑌹;
+
+
+
+\uE03D	→	𑌽;
+\uE03E	→	𑌾;
+\uE03F	→	𑌿;
+\uE040	→	𑍀;
+\uE041	→	𑍁;
+\uE042	→	𑍂;
+\uE043	→	𑍃;
+\uE044	→	𑍄;
+
+
+\uE047	→	𑍇;
+\uE048	→	𑍈;
+
+
+\uE04B	→	𑍋;
+\uE04C	→	𑍌;
+\uE04D	→	𑍍;
+\uE04E	→	𑌃;
+\uE04F	→	𑌃;
+\uE050	→	𑍐;
+\uE051	→	\u0951;
+\uE052	→	\u0952;
+
+
+
+
+
+
+
+
+
+
+
+
+
+\uE060	→	𑍠;
+\uE061	→	𑍡;
+\uE062	→	𑍢;
+\uE063	→	𑍣;
+\uE064	→	।;
+\uE065	→	॥;
+\uE066	→	\u0BE6; # FALLBACK DIGIT ZERO
+\uE067	→	௧; # DIGIT ONE
+\uE068	→	௨; # DIGIT TWO
+\uE069	→	௩; # DIGIT THREE
+\uE06A	→	௪; # DIGIT FOUR
+\uE06B	→	௫; # DIGIT FIVE
+\uE06C	→	௬; # DIGIT SIX
+\uE06D	→	௭; # DIGIT SEVEN
+\uE06E	→	௮; # DIGIT EIGHT
+\uE06F	→	௯; # DIGIT NINE

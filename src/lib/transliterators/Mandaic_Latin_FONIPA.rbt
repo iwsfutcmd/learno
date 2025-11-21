@@ -1,0 +1,36 @@
+# © 2023 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# File: Mandaic_Latin_FONIPA.txt
+#
+
+# References
+# ----------
+# [1] https://en.wikipedia.org/wiki/Mandaic_alphabet
+
+ࡒ↔kʼ;
+ࡑ↔sʼ;
+
+ࡀ↔ʔ;
+ࡁ↔b;
+ࡂ↔ɡ;
+ࡃ↔d;
+ࡄ↔h;
+ࡅ↔w;
+ࡆ↔z;
+ࡇ↔ħ;
+ࡈ↔tʼ;
+ࡉ↔j;
+ࡊ↔k;
+ࡔ↔ʃ;
+ࡋ↔l;
+ࡌ↔m;
+ࡍ↔n;
+ࡎ↔s;
+ࡏ↔ʕ;
+ࡐ↔p;
+ࡓ↔r;
+ࡕ↔t;
+ࡖ→di;
+ࡗ→kad;
+ࡘ→ʕ;

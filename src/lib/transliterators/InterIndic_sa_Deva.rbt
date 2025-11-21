@@ -1,0 +1,113 @@
+# InterIndic-sa_Deva
+#:: NFD (NFC) ;
+\uE001 →  \u0901;  # SIGN CANDRABINDU
+\uE002 →  \u0902;  # SIGN ANUSVARA
+\uE003 →  ः;  # SIGN VISARGA
+
+\uE005 →  अ;  # LETTER A
+\uE006 →  आ;  # LETTER AA
+\uE007 →  इ;  # LETTER I
+\uE008 →  ई;  # LETTER II
+\uE009 →  उ;  # LETTER U
+\uE00A →  ऊ;  # LETTER UU
+\uE00B →  ऋ;  # LETTER VOCALIC R
+\uE00C →  ऌ;  # LETTER VOCALIC L
+
+
+\uE00F →  ए;  # LETTER E
+\uE010 →  ऐ;  # LETTER AI
+
+
+\uE013 →  ओ;  # LETTER O
+\uE014 →  औ;  # LETTER AU
+\uE015 →  क;  # LETTER KA
+\uE016 →  ख;  # LETTER KHA
+\uE017 →  ग;  # LETTER GA
+\uE018 →  घ;  # LETTER GHA
+\uE019 →  ङ;  # LETTER NGA
+\uE01A →  च;  # LETTER CA
+\uE01B →  छ;  # LETTER CHA
+\uE01C →  ज;  # LETTER JA
+\uE01D →  झ;  # LETTER JHA
+\uE01E →  ञ;  # LETTER NYA
+\uE01F →  ट;  # LETTER TTA
+\uE020 →  ठ;  # LETTER TTHA
+\uE021 →  ड;  # LETTER DDA
+\uE022 →  ढ;  # LETTER DDHA
+\uE023 →  ण;  # LETTER NNA
+\uE024 →  त;  # LETTER TA
+\uE025 →  थ;  # LETTER THA
+\uE026 →  द;  # LETTER DA
+\uE027 →  ध;  # LETTER DHA
+\uE028 →  न;  # LETTER NA
+
+\uE02A →  प;  # LETTER PA
+\uE02B →  फ;  # LETTER PHA
+\uE02C →  ब;  # LETTER BA
+\uE02D →  भ;  # LETTER BHA
+\uE02E →  म;  # LETTER MA
+\uE02F →  य;  # LETTER YA
+\uE030 →  र;  # LETTER RA
+
+\uE032 →  ल;  # LETTER LA
+\uE033 →  ळ;  # LETTER LLA
+
+\uE035 →  व;  # LETTER VA
+\uE036 →  श;  # LETTER SHA
+\uE037 →  ष;  # LETTER SSA
+\uE038 →  स;  # LETTER SA
+\uE039 →  ह;  # LETTER HA
+
+
+
+\uE03D →  ऽ;  # SIGN AVAGRAHA
+\uE03E →  ा;  # VOWEL SIGN AA
+\uE03F →  ि;  # VOWEL SIGN I
+\uE040 →  ी;  # VOWEL SIGN II
+\uE041 →  \u0941;  # VOWEL SIGN U
+\uE042 →  \u0942;  # VOWEL SIGN UU
+\uE043 →  \u0943;  # VOWEL SIGN VOCALIC R
+\uE044 →  \u0944;  # VOWEL SIGN VOCALIC RR
+
+
+\uE047 →  \u0947;  # VOWEL SIGN E
+\uE048 →  \u0948;  # VOWEL SIGN AI
+
+
+\uE04B →  ो;  # VOWEL SIGN O
+\uE04C →  ौ;  # VOWEL SIGN AU
+\uE04D →  \u094D;  # SIGN VIRAMA
+\uE04E →  \u1CF5;  # JIHVAMULIYA
+\uE04F →  \u1CF6;  # UPADHMANIYA
+\uE050 →  ॐ;  # OM
+\uE051 →  \u0951;  # STRESS SIGN UDATTA
+\uE052 →  \u0952;  # STRESS SIGN ANUDATTA
+
+
+
+
+
+
+
+
+
+
+
+
+
+\uE060 →  ॠ;  # LETTER VOCALIC RR
+\uE061 →  ॡ;  # LETTER VOCALIC LL
+\uE062 →  \u0962;  # VOWEL SIGN VOCALIC L
+\uE063 →  \u0963;  # VOWEL SIGN VOCALIC LL
+\uE064 →  ।;  # DANDA
+\uE065 →  ॥;  # DOUBLE DANDA
+\uE066 →  ०;  # DIGIT ZERO
+\uE067 →  १;  # DIGIT ONE
+\uE068 →  २;  # DIGIT TWO
+\uE069 →  ३;  # DIGIT THREE
+\uE06A →  ४;  # DIGIT FOUR
+\uE06B →  ५;  # DIGIT FIVE
+\uE06C →  ६;  # DIGIT SIX
+\uE06D →  ७;  # DIGIT SEVEN
+\uE06E →  ८;  # DIGIT EIGHT
+\uE06F →  ९;  # DIGIT NINE

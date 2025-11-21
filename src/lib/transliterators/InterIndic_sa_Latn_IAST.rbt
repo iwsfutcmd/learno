@@ -1,0 +1,336 @@
+# InterIndic-sa_Latn_IAST
+:: [\uE000-\uE0FF];
+::NFC;
+#\uE000 reserved
+$chandrabindu=\uE001;
+$anusvara=\uE002;
+$visarga=\uE003;
+
+$wa=\uE005;
+$waa=\uE006;
+$wi=\uE007;
+$wii=\uE008;
+$wu=\uE009;
+$wuu=\uE00A;
+$wr=\uE00B;
+$wl=\uE00C;
+
+
+$we=\uE00F;  # ए LETTER E
+$wai=\uE010;
+
+
+$wo=\uE013;  # ओ LETTER O
+$wau=\uE014;
+$ka=\uE015;
+$kha=\uE016;
+$ga=\uE017;
+$gha=\uE018;
+$nga=\uE019;
+$ca=\uE01A;
+$cha=\uE01B;
+$ja=\uE01C;
+$jha=\uE01D;
+$nya=\uE01E;
+$tta=\uE01F;
+$ttha=\uE020;
+$dda=\uE021;
+$ddha=\uE022;
+$nna=\uE023;
+$ta=\uE024;
+$tha=\uE025;
+$da=\uE026;
+$dha=\uE027;
+$na=\uE028;
+
+$pa=\uE02A;
+$pha=\uE02B;
+$ba=\uE02C;
+$bha=\uE02D;
+$ma=\uE02E;
+$ya=\uE02F;
+$ra=\uE030;
+
+$la=\uE032;
+$lla=\uE033;
+
+$va=\uE035;
+$sha=\uE036;
+$ssa=\uE037;
+$sa=\uE038;
+$ha=\uE039;
+
+
+
+$avagraha=\uE03D;
+$aa=\uE03E;
+$i=\uE03F;
+$ii=\uE040;
+$u=\uE041;
+$uu=\uE042;
+$rh=\uE043;
+$rrh=\uE044;
+
+
+$e=\uE047;
+$ai=\uE048;
+
+
+$o=\uE04B;
+$au=\uE04C;
+$virama=\uE04D;
+$jihvamuliya=\uE04E;
+$upadhmaniya=\uE04F;
+$om=\uE050;
+$udatta=\uE051;
+$anudatta=\uE052;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$wrr=\uE060;
+$wll=\uE061;
+$lh=\uE062;
+$llh=\uE063;
+$danda=\uE064;
+$doubleDanda=\uE03B;
+$zero=\uE066;     # DIGIT ZERO
+$one=\uE067;      # DIGIT ONE
+$two=\uE068;      # DIGIT TWO
+$three=\uE069;    # DIGIT THREE
+$four=\uE06A;     # DIGIT FOUR
+$five=\uE06B;     # DIGIT FIVE
+$six=\uE06C;      # DIGIT SIX
+$seven=\uE06D;    # DIGIT SEVEN
+$eight=\uE06E;    # DIGIT EIGHT
+$nine=\uE06F;     # DIGIT NINE
+# $x was originally called '§'; $z was '%'
+$x=[$aa$ai$au$ii$i$uu$u$rrh$rh$lh$llh$e$o];
+$z=[bcdfghjklmnpqrstvwxyz];
+$vowels=[aeiour\u0304\u0325\u0306];
+$forceIndependentMatra = [^[[:L:][\u0300-\u034C]]];
+######################################################################
+$anusvara→ m\u0307;
+
+# normal consonants
+$ka$virama}$ha→k'';
+$ka}$x→k;
+$ka$virama→k;
+$ka→ka;
+$kha}$x→kh;
+$kha$virama→kh;
+$kha→kha;
+$ga$virama}$ha→g'';
+$ga}$x→g;
+$ga$virama→g;
+$ga→ga;
+$gha}$x→gh;
+$gha$virama→gh;
+$gha→gha;
+$nga}$x→n\u0307;
+$nga$virama→n\u0307;
+$nga→n\u0307a;
+$ca$virama}$ha→c'';
+$ca}$x→c;
+$ca$virama→c;
+$ca→ca;
+$cha}$x→ch;
+$cha$virama→ch;
+$cha→cha;
+$ja$virama}$ha→j'';
+$ja}$x→j;
+$ja$virama→j;
+$ja→ja;
+$jha}$x→jh;
+$jha$virama→jh;
+$jha→jha;
+$nya }$x→n\u0303;
+$nya$virama→n\u0303;
+$nya → n\u0303a;
+$tta$virama}$ha→t\u0323'';
+$tta}$x→t\u0323;
+$tta$virama→t\u0323;
+$tta→t\u0323a;
+$ttha}$x→t\u0323h;
+$ttha$virama→t\u0323h;
+$ttha→t\u0323ha;
+$dda$virama}$ha→d\u0323'';
+$dda}$x→d\u0323;
+$dda$virama→d\u0323;
+$dda→d\u0323a;
+$ddha}$x→d\u0323h;
+$ddha$virama→d\u0323h;
+$ddha→d\u0323ha;
+$nna}$x→n\u0323;
+$nna$virama→n\u0323;
+$nna→n\u0323a;
+$ta$virama}$ha→t'';
+$ta}$x→t;
+$ta$virama→t;
+$ta→ta;
+$tha}$x→th;
+$tha$virama→th;
+$tha→tha;
+$da$virama}$ha→d'';
+$da}$x→d;
+$da$virama→d;
+$da→da;
+$dha}$x→dh;
+$dha$virama→dh;
+$dha→dha;
+$na}$x→n;
+$na$virama→n;
+$na→na;
+$pa$virama}$ha→p'';
+$pa}$x→p;
+$pa$virama→p;
+$pa→pa;
+$pha}$x→ph;
+$pha$virama→ph;
+$pha→pha;
+$ba$virama}$ha→b'';
+$ba}$x→b;
+$ba$virama→b;
+$ba→ba;
+$bha}$x→bh;
+$bha$virama→bh;
+$bha→bha;
+$ma}$x→m;
+$ma$virama→m;
+$ma→ma;
+$ya}$x→y;
+$ya$virama→y;
+$ya→ya;
+$ra}$x→r;
+$ra$virama→r;
+$ra→ra;
+$la}$x→l;
+$la$virama→l;
+$la→la;
+$lla}$x→l\u0331;
+$lla$virama→l\u0331;
+$lla→l\u0331a;
+$va}$x→v;
+$va$virama→v;
+$va→va;
+$sa}$x→s;
+$sa$virama→s;
+$sa→sa;
+$sha}$x→s\u0301;
+$sha$virama→s\u0301;
+$sha→s\u0301a;
+$ssa}$x→s\u0323;
+$ssa$virama→s\u0323;
+$ssa→s\u0323a;
+$ha}$x→h;
+$ha$virama→h;
+$ha→ha;
+
+# dependent vowels (should never occur except following consonants)
+$forceIndependentMatra{$aa  → \u0314a\u0304;
+$forceIndependentMatra{$ai  → \u0314ai;
+$forceIndependentMatra{$au  → \u0314au;
+$forceIndependentMatra{$ii  → \u0314i\u0304;
+$forceIndependentMatra{$i   → \u0314i;
+$forceIndependentMatra{$uu  → \u0314u\u0304;
+$forceIndependentMatra{$u   → \u0314u;
+$forceIndependentMatra{$rrh → \u0314r\u0323\u0304;
+$forceIndependentMatra{$rh  → \u0314r\u0323;
+$forceIndependentMatra{$llh → \u0314l\u0323\u0304;
+$forceIndependentMatra{$lh  → \u0314l\u0323;
+$forceIndependentMatra{$e   → \u0314e;
+$forceIndependentMatra{$o   → \u0314o;
+$forceIndependentMatra{$virama →; # Virama cannot appear independently or as first character
+$aa  → a\u0304;
+$ai  → ai;
+$au  → au;
+$ii  → i\u0304;
+$i   → i;
+$uu  → u\u0304;
+$u   → u;
+$rrh → r\u0323\u0304;
+$rh  → r\u0323;
+$llh → l\u0323\u0304;
+$lh  → l\u0323;
+$e   → e;
+$o   → o;
+#dependent vowels when following independent vowels. Generally Illegal only for roundtripping
+$waa} $x → a\u0304\u0314;
+$wai} $x → ai\u0314;
+$wau} $x → au\u0314;
+$wii} $x → i\u0304\u0314;
+$wi } $x → i\u0314;
+$wuu} $x → u\u0304\u0314;
+$wu } $x → u\u0314;
+$wrr} $x → r\u0323\u0304\u0314;
+$wr } $x → r\u0323\u0314;
+$wll} $x → l\u0323\u0304\u0314;
+$wl } $x → l\u0323\u0314;
+$we } $x → e\u0314;
+$wo } $x → o\u0314;
+$wa } $x → a\u0314;
+# independent vowels when preceded by vowels
+$vowels{$waa  → ''a\u0304;
+$vowels{$wai  → ''ai;
+$vowels{$wau  → ''au;
+$vowels{$wii  → ''i\u0304;
+$vowels{$wi   → ''i;
+$vowels{$wuu  → ''u\u0304;
+$vowels{$wu   → ''u;
+$vowels{$wrr  → ''r\u0323\u0304;
+$vowels{$wr   → ''r\u0323;
+$vowels{$wll  → ''l\u0323\u0304;
+$vowels{$wl   → ''l\u0323;
+$vowels{$we   → ''e;
+$vowels{$wo   → ''o;
+$vowels{$wa   → ''a;
+# independent vowels (otherwise)
+$waa → a\u0304;
+$wai → ai;
+$wau → au;
+$wii → i\u0304;
+$wi  → i;
+$wuu → u\u0304;
+$wu  → u;
+$wrr → r\u0323\u0304;
+$wr  → r\u0323;
+$wll → l\u0323\u0304;
+$wl  → l\u0323;
+$we  → e;
+$wo  → o;
+$wa  → a;
+$om → om\u0310;
+#stress marks
+$avagraha → \u02bc;
+$chandrabindu → m\u0310;
+$visarga→h\u0323;
+#numbers
+$zero  → 0;
+$one   → 1;
+$two   → 2;
+$three → 3;
+$four  → 4;
+$five  → 5;
+$six   → 6;
+$seven → 7;
+$eight → 8;
+$nine  → 9;
+$danda→'.';
+$doubleDanda→'..';
+$virama→; # remove remaining viramas
+\u200C→;
+\u200D→;
+$jihvamuliya→h\u0331;
+$upadhmaniya→h\u032e;
+$udatta→\u0301;
+$anudatta→\u0300;
+:: NFC;

@@ -1,0 +1,221 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: InterIndic_Oriya.txt
+# Generated from CLDR
+#
+
+# InterIndic-Oriya
+#:: NFD (NFC) ;
+\uE001→\u0B01; # SIGN CANDRABINDU
+\uE002→ଂ; # SIGN ANUSVARA
+\uE003→ଃ; # SIGN VISARGA
+\uE004→ଅ; # FALLBACK TO LETTER A
+\uE005→ଅ; # LETTER A
+\uE006→ଆ; # LETTER AA
+\uE007→ଇ; # LETTER I
+\uE008→ଈ; # LETTER II
+\uE009→ଉ; # LETTER U
+\uE00A→ଊ; # LETTER UU
+\uE00B→ଋ; # LETTER VOCALIC R
+\uE00C→ଌ; # LETTER VOCALIC L
+\uE00D→ଏ; # FALLBACK
+\uE00E→ଏ; # FALLBACK
+\uE00F→ଏ; # LETTER E
+\uE010→ଐ; # LETTER AI
+\uE011→ଓ; # FALLBACK
+\uE012→ଓ; # FALLBACK
+\uE013→ଓ; # FALLBACK  LETTER OO (ଓ = LETTER O)
+\uE014→ଔ; # LETTER AU
+\uE015→କ; # LETTER KA
+\uE016→ଖ; # LETTER KHA
+\uE017→ଗ; # LETTER GA
+\uE018→ଘ; # LETTER GHA
+\uE019→ଙ; # LETTER NGA
+\uE01A→ଚ; # LETTER CA
+\uE01B→ଛ; # LETTER CHA
+\uE01C→ଜ; # LETTER JA
+\uE01D→ଝ; # LETTER JHA
+\uE01E→ଞ; # LETTER NYA
+\uE01F→ଟ; # LETTER TTA
+\uE020→ଠ; # LETTER TTHA
+\uE021→ଡ; # LETTER DDA
+\uE022→ଢ; # LETTER DDHA
+\uE023→ଣ; # LETTER NNA
+\uE024→ତ; # LETTER TA
+\uE025→ଥ; # LETTER THA
+\uE026→ଦ; # LETTER DA
+\uE027→ଧ; # LETTER DHA
+\uE028→ନ; # LETTER NA
+\uE029→ନ\u0B3C; # FALLBACK \u0B29→ନ = LETTER NNNA→LETTER NA
+\uE02A→ପ; # LETTER PA
+\uE02B→ଫ; # LETTER PHA
+\uE02C→ବ; # LETTER BA
+\uE02D→ଭ; # LETTER BHA
+\uE02E→ମ; # LETTER MA
+\uE02F→ଯ; # LETTER YA
+\uE030→ର; # LETTER RA
+\uE031→ଡ଼; # LETTER RRA
+\uE032→ଲ; # LETTER LA
+\uE033→ଳ; # LETTER LLA
+\uE034→ଳ\u0B3C; # FALLBACK  LETTER LLLA→LETTER LLA
+\uE035→ଵ; # LETTER VA
+\uE036→ଶ; # LETTER SHA
+\uE037→ଷ; # LETTER SSA
+\uE038→ସ; # LETTER SA
+\uE039→ହ; # LETTER HA
+\uE03A→।;
+\uE03B→॥;
+\uE03C→\u0B3C; # SIGN NUKTA
+\uE03D→ଽ; # SIGN AVAGRAHA
+\uE03E→ା; # VOWEL SIGN AA
+\uE03F→\u0B3F; # VOWEL SIGN I
+\uE040→ୀ; # VOWEL SIGN II
+\uE041→\u0B41; # VOWEL SIGN U
+\uE042→\u0B42; # VOWEL SIGN UU
+\uE043→\u0B43; # VOWEL SIGN VOCALIC R
+\uE044→\u0B44;
+\uE045→େ; # FALLBACK
+\uE046→େ; # FALLBACK
+\uE047→େ; # VOWEL SIGN E
+\uE048→ୈ; # VOWEL SIGN AI
+\uE049→ୋ; # FALLBACK
+\uE04A→ୋ; # FALLBACK
+\uE04B→ୋ; # VOWEL SIGN E
+\uE04C→ୌ; # VOWEL SIGN AU
+\uE04D→\u0B4D; # SIGN VIRAMA
+\uE04E→ଃ;
+\uE04F→ଃ;
+\uE050→ଓ\u0B01; # FALLBACK \u0B50→ଓ\u0B01 = OM→LETTER O.SIGN CANDRABINDU
+\uE051→\u0951;
+\uE052→\u0952;
+\uE053→;
+\uE054→;
+\uE055→; # UNMAPPED InterIndic-Oriya: LENGTH MARK
+\uE056→\u0B56; # AI LENGTH MARK
+\uE057→ୗ; # AU LENGTH MARK
+\uE059→ଖ\u0B3C; # FALLBACK \u0B59→ଖ\u0B3C = LETTER KHHA→LETTER KHA.SIGN NUKTA
+\uE058→କ\u0B3C; # FALLBACK
+\uE05A→ଗ\u0B3C; # FALLBACK \u0B5A→ଗ\u0B3C = LETTER GHHA→LETTER GA.SIGN NUKTA
+\uE05B→ଜ\u0B3C; # FALLBACK \u0B5B→ଜ\u0B3C = LETTER ZA→LETTER JA.SIGN NUKTA
+\uE05C→ଡ\u0B3C; # FALLBACK
+\uE05D→ଢ଼; # LETTER RHA
+\uE05E→ଫ\u0B3C; # FALLBACK \u0B5E→ଫ\u0B3C = LETTER FA→LETTER PHA.SIGN NUKTA
+\uE05F→ୟ; # LETTER YYA
+\uE060→ୠ; # LETTER VOCALIC RR
+\uE061→ୡ; # LETTER VOCALIC LL
+\uE062→\u0B62;
+\uE063→\u0B63;
+\uE064→।; # DANDA
+\uE065→॥; # DOUBLE DANDA
+\uE066→୦; # DIGIT ZERO
+\uE067→୧; # DIGIT ONE
+\uE068→୨; # DIGIT TWO
+\uE069→୩; # DIGIT THREE
+\uE06A→୪; # DIGIT FOUR
+\uE06B→୫; # DIGIT FIVE
+\uE06C→୬; # DIGIT SIX
+\uE06D→୭; # DIGIT SEVEN
+\uE06E→୮; # DIGIT EIGHT
+\uE06F→୯; # DIGIT NINE
+\uE070→;  # ABBREVIATION SIGN
+\uE071→ର; # LETTER RA WITH MIDDLE DIAGONAL
+\uE072→ଵ; # LETTER RA WITH LOWER DIAGONAL
+\uE073→;       # RUPEE MARK
+\uE074→;       # RUPEE SIGN
+\uE075→;       # CURRENCY NUMERATOR ONE
+\uE076→;       # CURRENCY NUMERATOR TWO
+\uE077→;       # CURRENCY NUMERATOR THREE
+\uE078→;       # CURRENCY NUMERATOR FOUR
+\uE079→;       # CURRENCY NUMERATOR ONE LESS THAN THE DENOMINATOR
+\uE07A→;       # CURRENCY DENOMINATOR SIXTEEN
+\uE07B→୰; # ISSHAR
+\uE07C→;       # TIPPI
+\uE07D([\uE000-\uE0FF] \uE03C?)→ |$1 \uE04D $1;
+\uE07E→;       # IRI
+\uE07F→;       # URA
+\uE080→;       # EK ONKAR
+\uE081→ୱ; # LETTER WA
+\uE082→;       # Devanagari Glottal Stop
+\uE083→ତ\u0B4D;  # Bengali Khanda-ta
+\uE084→ଅ;
+\uE085→\u0BD4\u200C;
+\uE086→କ୍;
+\uE087→ଙ୍;
+\uE088→ଚ୍;
+\uE089→ଣ୍;
+\uE08A→ନ୍;
+\uE08B→ପ୍;
+\uE08C→ମ୍;
+\uE08D→ଯ୍;
+\uE08E→ର୍;
+\uE08F→ଲ୍;
+\uE090→ଵ୍;
+\uE091→ଷ୍;
+\uE092→ଳ୍;
+\uE093→ଳ଼୍;
+\uE094→ର଼୍;
+\uE095→୍ଯ;
+\uE096→୍ର;
+\uE097→୍ବ;
+\uE098→୍ହ;
+\uE099→ର୍;
+\uE09A→ତ୍ସ;
+\uE09B→ଥ୍ସ;
+\uE09C→ଦ୍ଜ଼;
+\uE09D→ଜ଼;
+\uE09E→ଲ୍ହ;
+\uE09F→ଵ଼;
+\uE0A0→ଶ଼;
+\uE0A1→ଜ୍ଞ;
+\uE0A2→ଅ;
+\uE0A3→ଆ;
+\uE0A4→ଔ;
+\uE0A5→ଅୁ;
+\uE0A6→ଅୂ;
+\uE0A7→ଐ;
+\uE0A8→େ;
+\uE0A9→ୋ;
+\uE0AA→ୌ;
+\uE0AB→ୁ;
+\uE0AC→ୂ;
+\uE0AD→ୈ;
+\uE0AE→ୋଇ;
+\uE0AF→େ;
+\uE0B0→ୈ;
+\uE0B1→ୋ;
+\uE0B2→ୌ;
+\uE0B3→ଈ;
+\uE0B4→ା;
+\uE0B5→େ;
+\uE0B6→ଡ;
+\uE0B7→ୟ;
+\uE0B8→ଗ଼;
+\uE0B9→ଜ଼;
+\uE0BA→ଡ଼;
+\uE0BB→ବ଼;
+\uE0BC→ଙ୍ଗ;
+\uE0BD→ଞ୍ଜ;
+\uE0BE→ଣ୍ଡ;
+\uE0BF→ନ୍ଦ;
+\uE0C0→ମ୍ବ;
+\uE0C1→ତ୍;
+\uE0C2→ଦ୍;
+\uE0C3→ଳ;
+\uE0C4→ର;
+\uE0C5→꣼;
+\uE0C6→꣼;
+\uE0C7→;
+\uE0C8→;
+\uE0C9→ꣽ;
+\uE0CA→ଁ;
+\uE0CB→ଂ;
+\uE0CC→\u0BD4\u200C;
+\uE0CD→ଽ;
+\uE0CE→;
+0 → ୦;    # FALLBACK FOR TAMIL
+1 → ୧;
+#    :: NFC (NFD) ;
+# eof
+

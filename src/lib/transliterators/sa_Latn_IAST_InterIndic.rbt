@@ -1,0 +1,280 @@
+# sa_Latn_IAST-InterIndic
+:: NFD;
+'...'	→	'...';
+#\uE000 reserved
+$chandrabindu=\uE001;
+$anusvara=\uE002;
+$visarga=\uE003;
+
+$wa=\uE005;
+$waa=\uE006;
+$wi=\uE007;
+$wii=\uE008;
+$wu=\uE009;
+$wuu=\uE00A;
+$wr=\uE00B;
+$wl=\uE00C;
+
+
+$we=\uE00F;  # ए LETTER E
+$wai=\uE010;
+
+
+$wo=\uE013;  # ओ LETTER O
+$wau=\uE014;
+$ka=\uE015;
+$kha=\uE016;
+$ga=\uE017;
+$gha=\uE018;
+$nga=\uE019;
+$ca=\uE01A;
+$cha=\uE01B;
+$ja=\uE01C;
+$jha=\uE01D;
+$nya=\uE01E;
+$tta=\uE01F;
+$ttha=\uE020;
+$dda=\uE021;
+$ddha=\uE022;
+$nna=\uE023;
+$ta=\uE024;
+$tha=\uE025;
+$da=\uE026;
+$dha=\uE027;
+$na=\uE028;
+
+$pa=\uE02A;
+$pha=\uE02B;
+$ba=\uE02C;
+$bha=\uE02D;
+$ma=\uE02E;
+$ya=\uE02F;
+$ra=\uE030;
+
+$la=\uE032;
+$lla=\uE033;
+
+$va=\uE035;
+$sha=\uE036;
+$ssa=\uE037;
+$sa=\uE038;
+$ha=\uE039;
+
+
+
+$avagraha=\uE03D;
+$aa=\uE03E;
+$i=\uE03F;
+$ii=\uE040;
+$u=\uE041;
+$uu=\uE042;
+$rh=\uE043;
+$rrh=\uE044;
+
+
+$e=\uE047;
+$ai=\uE048;
+
+
+$o=\uE04B;
+$au=\uE04C;
+$virama=\uE04D;
+$jihvamuliya=\uE04E;
+$upadhmaniya=\uE04F;
+$om=\uE050;
+$udatta=\uE051;
+$anudatta=\uE052;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$wrr=\uE060;
+$wll=\uE061;
+$lh=\uE062;
+$llh=\uE063;
+$danda=\uE064;
+$doubleDanda=\uE065;
+$zero=\uE066;     # DIGIT ZERO
+$one=\uE067;      # DIGIT ONE
+$two=\uE068;      # DIGIT TWO
+$three=\uE069;    # DIGIT THREE
+$four=\uE06A;     # DIGIT FOUR
+$five=\uE06B;     # DIGIT FIVE
+$six=\uE06C;      # DIGIT SIX
+$seven=\uE06D;    # DIGIT SEVEN
+$eight=\uE06E;    # DIGIT EIGHT
+$nine=\uE06F;     # DIGIT NINE
+
+$endThing=[$danda$doubleDanda];
+
+# $x was originally called '§'; $z was '%'
+$x=[$virama$aa$ai$au$ii$i$uu$u$rrh$rh$lh$e$o];
+$z=[bcdfghjklmnpqrstvwxyz];
+$indconsonants=[\u00A0×क-ह़क़-य़ॸ-ঀক-নপ-রলশ-হ়ড়ঢ়য়ৰৱਕ-ਨਪ-ਰਲਲ਼ਵਸ਼ਸਹ਼ਖ਼-ੜਫ਼ੱ-ੳੵક-નપ-રલળવ-હ઼ૹૻ૽-૿କ-ନପ-ରଲଳଵ-ହ଼ଡ଼ଢ଼ୟୱஃகஙசஜஞடணதந-பம-ஹక-నప-హ\u0c3cౘ-ౚಕ-ನಪ-ಳವ-ಹ಼ೞക-ഺක-නඳ-රලව-ෆก-ฮ์ກຂຄຆ-ຊຌ-ຣລວ-ຮຼຽໜ-ໟ༹ཀ-ཇཉ-ཬྍ-ྗྙ-ྼက-ဠျ-ဿ။၎ၐၑၚ-ၡၥၦၮ-ၰၵ-ႂႎᜃ-ᜑ\u171fᜣ-ᜱᝃ-ᝑᝣ-ᝬᝮ-ᝰក-អ៉៊៌៍ᤀ-ᤞᤩ-ᤫᥐ-ᥢᦀ-ᦫᨀ-ᨖᨠ-ᩌᩓ-ᩗᩚ-ᩞᬓ-᬴ᭅ-\u1b4cᮊ-ᮣᮬ-ᮯᮻ-ᮽᯀ-ᯣ᯦ᰀ-ᰥ᰷ᱍ-ᱏᳺ‐-—◌ꠇ-ꠊꠌ-ꠢꡀ-ꡝꡢ-ꡥꡧ-ꡲꢒ-ꢴꤊ-ꤡꤰ-ꥆꦉ-ꦋꦏ-꦳ꦽ-ꦿꧠ-ꧤꧧ-ꧯꧺ-ꧾꨆ-ꨨꨳ-ꨶꩠ-ꩯꩱ-ꩶꩺꩾ-ꪯꫢ-ꫪꯀ-ꯍꯐꯒ-ꯚ𐨀𐨐-𐨓𐨕-𐨗𐨙-𐨵𐨸-𐨺𑀓-𑀷\U00011075𑂍-𑂯𑂺𑄇-𑄦𑅄𑅇𑅕-𑅳𑆑-𑆲𑇊𑈈-𑈑𑈓-𑈫𑈶𑈷\U0001123f𑊄-𑊆𑊈𑊊-𑊍𑊏-𑊝𑊟-𑊨𑊺-𑋞𑋩𑌕-𑌨𑌪-𑌰𑌲𑌳𑌵-𑌹𑌻𑌼𑐎-𑐴𑑆𑒏-𑒯𑓃𑖎-𑖮𑗀𑘎-𑘯𑚊-𑚪𑚷𑚸𑜀-𑜚𑜝-𑜟\U00011740-\U00011746𑠊-𑠫𑠺𑤌-𑤓𑤕𑤖𑤘-𑤯𑥀𑥂𑥃𑦮-𑧐𑨋-𑨲𑨻-𑨿𑩅𑩜-𑪃𑪘𑰎-𑰮𑱲-𑲏𑲒-𑲧𑲩-𑲯𑴌-𑴰𑵂𑵇𑵬-𑶉𑻠-𑻲\U00011f12-\U00011f33];
+$consonants=[[$ka-$ha][$z][$indconsonants]];
+(. [[\p{Mark}]-[\u0358]]* ) \u0358	→	| \u0358 $1 ;
+h\u0331→$jihvamuliya;
+h\u032e→$upadhmaniya;
+\u02bc → $avagraha;
+m\u0310→$chandrabindu;
+h\u0323→$visarga;
+# convert to independent forms at start of word or syllable:
+# dependent forms for roundtrip
+\u0314r\u0323\u0304→$rrh;
+\u0314l\u0323\u0304→$llh;
+\u0314a\u0304→$aa;
+\u0314i\u0304→$ii;
+\u0314u\u0304→$uu;
+\u0314r\u0323→$rh;
+\u0314l\u0323→$lh;
+\u0314e→$e;
+\u0314o→$o;
+\u0314ai→$ai;
+\u0314au→$au;
+\u0314i→$i;
+\u0314u→$u;
+\u0314a→;
+
+# preceded by consonants
+$consonants{ r\u0323\u0304→$rrh;
+$consonants{ l\u0323\u0304→$llh;
+$consonants{ a\u0304→$aa;
+$consonants{ i\u0304→$ii;
+$consonants{ u\u0304→$uu;
+$consonants{ r\u0323→$rh;
+$consonants{ l\u0323→$lh;
+$consonants{ e→$e;
+$consonants{ o→$o;
+$consonants{ ai→$ai;
+$consonants{ au→$au;
+$consonants{ i→$i;
+$consonants{ u→$u;
+
+# e.g. keai -→ {ka}{e}{wai}; k'ai -→ {ka}{wai}; (ai) -→ ({wai})
+om\u0310→$om;
+r\u0323\u0304→$wrr;
+l\u0323\u0304→$wll;
+a\u0304→$waa;
+i\u0304→$wii;
+u\u0304→$wuu;
+r\u0323→$wr;
+l\u0323→$wl;
+e→$we;
+o→$wo;
+ai→$wai;
+au→$wau;
+i→$wi;
+u→$wu;
+a→$wa;
+# rules for anusvara
+m\u0307             → $anusvara;
+n\u0307→$nga|$virama;
+n\u0303→$nya|$virama;
+n\u0323→$nna|$virama;
+t\u0323h→$ttha|$virama;
+t\u0323→$tta|$virama;
+d\u0323h→$ddha|$virama;
+d\u0323→$dda|$virama;
+kh→$kha|$virama;
+k→$ka|$virama;
+gh→$gha|$virama;
+g→$ga|$virama;
+ch→$cha|$virama;
+c→$ca|$virama;
+jh→$jha|$virama;
+j→$ja|$virama;
+th→$tha|$virama;
+t→$ta|$virama;
+dh→$dha|$virama;
+d→$da|$virama;
+n→$na|$virama;
+ph→$pha|$virama;
+p→$pa|$virama;
+bh→$bha|$virama;
+b→$ba|$virama;
+m→$ma|$virama;
+y→$ya|$virama;
+r→$ra|$virama;
+l\u0331→$lla|$virama;
+l→$la|$virama;
+v→$va|$virama;
+s\u0323→$ssa|$virama;
+s\u0301→$sha|$virama;
+s→$sa|$virama;
+h→$ha|$virama;
+'..'→$doubleDanda;
+'.'→$danda;
+# convert to dependent forms after consonant with no vowel:
+# e.g. kai -→ {ka}{virama}ai -→ {ka}{ai}
+$virama r\u0323\u0304→$rrh;
+$virama l\u0323\u0304→$llh;
+$virama a\u0304→$aa;
+$virama i\u0304→$ii;
+$virama u\u0304→$uu;
+$virama r\u0323→$rh;
+$virama l\u0323→$lh;
+$virama e→$e;
+$virama o→$o;
+$virama ai→$ai;
+$virama au→$au;
+$virama i→$i;
+$virama u→$u;
+$virama a→;
+# otherwise convert independent forms when separated by ': k'ai -→ {ka}{virama}{wai}
+$virama''r\u0323\u0304→$virama$wrr;
+$virama''l\u0323\u0304→$virama$wll;
+$virama''a\u0304→$virama$waa;
+$virama''i\u0304→$virama$wii;
+$virama''u\u0304→$virama$wuu;
+$virama''r\u0323→$virama$wr;
+$virama''l\u0323→$virama$wl;
+$virama''e→$virama$we;
+$virama''o→$virama$wo;
+$virama''ai→$virama$wai;
+$virama''au→$virama$wau;
+$virama''i→$virama$wi;
+$virama''u→$virama$wu;
+$virama''a→$virama$wa;
+# no virama
+''r\u0323\u0304→$wrr;
+''l\u0323\u0304→$wll;
+''a\u0304→$waa;
+''i\u0304→$wii;
+''u\u0304→$wuu;
+''r\u0323→$wr;
+''l\u0323→$wl;
+''e→$we;
+''o→$wo;
+''ai→$wai;
+''au→$wau;
+''i→$wi;
+''u→$wu;
+''a→$wa;
+$virama } [$z] → $virama;
+$virama } ' ' → $virama ;
+$virama}$endThing→;
+0→$zero;
+1→$one;
+2→$two;
+3→$three;
+4→$four;
+5→$five;
+6→$six;
+7→$seven;
+8→$eight;
+9→$nine;
+''→;
+\u0301→$udatta;
+\u0300→$anudatta;
+
+#:: NFC (NFD) ;
+

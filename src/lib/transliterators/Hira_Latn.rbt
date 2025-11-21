@@ -1,0 +1,16 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: Hira_Latn.txt
+# Generated from CLDR
+#
+
+:: [[ぁ-ゔ\u3099\u309Aゝ-ゞガギグゲゴザジズゼゾダヂヅデドバビブベボヴヷ-ヺーヾ][ㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿヿ㌠㌵㌶㍍㍑𛀀𛄠𛄡𛄢𛅕𛅤𛅥𛅦𛅧]] ;
+:: NFD ;
+:: und_Hira-und_Kana;
+:: und_Kana-und_Latn_hepburnx;
+:: NFC ;
+:: (Lower) ;
+:: ([',.A-Za-z~À-ÖØ-öø-ďĒ-ĥĨ-İĴ-ķĹ-ľŃ-ňŌ-őŔ-ťŨ-žƠ-ơƯ-ưǍ-ǜǞ-ǣǦ-ǭǰǴ-ǵǸ-țȞ-ȟȦ-ȳ\u0304Ӣ-ӣӮ-ӯḀ-ẙẠ-ỹᾱᾹῑῙῡῩK-Å]) ;
+

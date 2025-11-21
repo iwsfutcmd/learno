@@ -1,0 +1,156 @@
+# sa_Tibt-InterIndic
+#:: NFD;
+
+\u0F83→\uE001;  # SIGN CANDRABINDU
+\u0F7E→\uE002;  # SIGN ANUSVARA
+\u0F7F→\uE003;  # SIGN VISARGA
+
+ཨཱི→\uE008;  # LETTER II
+ཨཱུ→\uE00A;  # LETTER UU
+ཨྲཱྀ→\uE060;  # LETTER VOCALIC RR
+ཨླཱྀ→\uE061;  # LETTER VOCALIC LL
+
+ཨྲྀ→\uE00B;  # LETTER VOCALIC R
+ཨླྀ→\uE00C;  # LETTER VOCALIC L
+
+ཨཱ→\uE006;  # LETTER AA
+
+ཨི→\uE007;  # LETTER I
+ཨུ→\uE009;  # LETTER U
+ཨེ→\uE00F;  # LETTER E
+ཨཻ→\uE010;  # LETTER AI
+ཨོ→\uE013;  # LETTER O
+ཨཽ→\uE014;  # LETTER AU
+
+ཨ→\uE005;  # LETTER A
+
+གྷ→\uE018;  # LETTER GHA
+ཇྷ→\uE01D;  # LETTER JHA
+ཌྷ→\uE022;  # LETTER DDHA
+དྷ→\uE027;  # LETTER DHA
+བྷ→\uE02D;  # LETTER BHA
+
+ལ༹→\uE033;  # LETTER LLA
+
+ཀ→\uE015;  # LETTER KA
+ཁ→\uE016;  # LETTER KHA
+ག→\uE017;  # LETTER GA
+ང→\uE019;  # LETTER NGA
+ཅ→\uE01A;  # LETTER CA
+ཆ→\uE01B;  # LETTER CHA
+ཇ→\uE01C;  # LETTER JA
+ཉ→\uE01E;  # LETTER NYA
+ཊ→\uE01F;  # LETTER TTA
+ཋ→\uE020;  # LETTER TTHA
+ཌ→\uE021;  # LETTER DDA
+ཎ→\uE023;  # LETTER NNA
+ཏ→\uE024;  # LETTER TA
+ཐ→\uE025;  # LETTER THA
+ད→\uE026;  # LETTER DA
+ན→\uE028;  # LETTER NA
+པ→\uE02A;  # LETTER PA
+ཕ→\uE02B;  # LETTER PHA
+བ→\uE02C;  # LETTER BA
+མ→\uE02E;  # LETTER MA
+ཡ→\uE02F;  # LETTER YA
+ར→\uE030;  # LETTER RA
+
+ལ→\uE032;  # LETTER LA
+
+ཝ→\uE035;  # LETTER VA
+ཤ→\uE036;  # LETTER SHA
+ཥ→\uE037;  # LETTER SSA
+ས→\uE038;  # LETTER SA
+ཧ→\uE039;  # LETTER HA
+
+
+
+\u0F71\u0F72→\uE040;  # VOWEL SIGN II
+\u0F71\u0F74→\uE042;  # VOWEL SIGN UU
+\u0FB2\u0F71\u0F80→\uE044;  # VOWEL SIGN VOCALIC RR
+\u0FB3\u0F71\u0F80→\uE063;  # VOWEL SIGN VOCALIC LL
+\u0FB2\u0F80→\uE043;  # VOWEL SIGN VOCALIC R
+\u0FB3\u0F80→\uE062;  # VOWEL SIGN VOCALIC L
+
+྅→\uE03D;  # SIGN AVAGRAHA
+\u0F71→\uE03E;  # VOWEL SIGN AA
+\u0F72→\uE03F;  # VOWEL SIGN I
+\u0F74→\uE041;  # VOWEL SIGN U
+\u0F7A→\uE047;  # VOWEL SIGN E
+\u0F7B→\uE048;  # VOWEL SIGN AI
+\u0F7C→\uE04B;  # VOWEL SIGN O
+\u0F7D→\uE04C;  # VOWEL SIGN AU
+
+\u0F84→\uE04D;  # SIGN VIRAMA
+
+\u0F88→\uE04E;  # JIHVAMULIYA
+\u0F89→\uE04F;  # UPADHMANIYA
+ༀ→\uE050;  # OM
+\u0951→\uE051;  # STRESS SIGN UDATTA
+\u0952→\uE052;  # STRESS SIGN ANUDATTA
+
+
+
+
+
+
+
+
+
+
+
+
+།→\uE064;  # DANDA
+༎→\uE065;  # DOUBLE DANDA
+༠→\uE066;  # DIGIT ZERO
+༡→\uE067;  # DIGIT ONE
+༢→\uE068;  # DIGIT TWO
+༣→\uE069;  # DIGIT THREE
+༤→\uE06A;  # DIGIT FOUR
+༥→\uE06B;  # DIGIT FIVE
+༦→\uE06C;  # DIGIT SIX
+༧→\uE06D;  # DIGIT SEVEN
+༨→\uE06E;  # DIGIT EIGHT
+༩→\uE06F;  # DIGIT NINE
+
+་→;  # TSHEG (blown away)
+
+\u0F92\u0FB7→\uE04D\uE018;
+\u0F97\u0FB7→\uE04D\uE01D;
+\u0F9C\u0FB7→\uE04D\uE022;
+\u0FA1\u0FB7→\uE04D\uE027;
+\u0FA6\u0FB7→\uE04D\uE02D;
+
+\u0F90→\uE04D\uE015;
+\u0F91→\uE04D\uE016;
+\u0F92→\uE04D\uE017;
+\u0F94→\uE04D\uE019;
+\u0F95→\uE04D\uE01A;
+\u0F96→\uE04D\uE01B;
+\u0F97→\uE04D\uE01C;
+
+\u0F99→\uE04D\uE01E;
+\u0F9A→\uE04D\uE01F;
+\u0F9B→\uE04D\uE020;
+\u0F9C→\uE04D\uE021;
+\u0F9E→\uE04D\uE023;
+\u0F9F→\uE04D\uE024;
+\u0FA0→\uE04D\uE025;
+\u0FA1→\uE04D\uE026;
+\u0FA3→\uE04D\uE028;
+\u0FA4→\uE04D\uE02A;
+\u0FA5→\uE04D\uE02B;
+\u0FA6→\uE04D\uE02C;
+\u0FA8→\uE04D\uE02E;
+
+\u0FAD→\uE04D\uE035;
+
+\u0FB1→\uE04D\uE02F;
+\u0FB2→\uE04D\uE030;
+
+\u0FB3→\uE04D\uE032;
+
+\u0FB4→\uE04D\uE036;
+\u0FB5→\uE04D\uE037;
+\u0FB6→\uE04D\uE038;
+\u0FB7→\uE04D\uE039;

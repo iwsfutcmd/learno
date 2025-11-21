@@ -1,0 +1,78 @@
+# © 2023 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# File: mnc_Latn.txt
+#
+
+# References
+# ----------
+# [1] https://en.wikipedia.org/wiki/Manchu_alphabet
+# catch errant Sibe letters, turn them into their Manchu equivalent
+ᡞ→ᡳ;
+ᡣ→ᡴ;
+ᡫ→ᡶ;
+ᠷ→ᡵ;
+ᡢ→ᠩ;
+ᡪ→ᠵ;
+ᡲ→ᡷ;
+᠇→;
+::Null ();
+ᠰᡟ↔sy;
+ᡱᡳ↔cy;
+ᡷᡳ↔jy;
+ᡮᡟ↔tsy;
+ᡮ↔ts;
+ᡯᡟ↔dzy;
+ᡯ↔dz;
+ᠺ↔k’;
+ᡬ↔g’;
+ᡭ↔h’;
+ᠩ↔ng;
+
+# pedagogical materials
+ᡟ↔y’;
+ᡱ↔c’;
+ᡷ↔j’;
+
+ᠠ↔a;
+ᡝ↔e;
+ᡳ↔i;
+ᠣ↔o;
+ᡠ↔u;
+ᡡ↔ū;
+ᠨ↔n;
+ᡴ↔k;
+ᡤ↔g;
+ᡥ↔h;
+ᠪ↔b;
+ᡦ↔p;
+ᠰ↔s;
+ᡧ↔š;
+ᡨ↔t;
+ᡩ↔d;
+ᠯ↔l;
+ᠮ↔m;
+ᠴ↔c;
+ᠵ↔j;
+ᠶ↔y;
+ᡵ↔r;
+ᡶ↔f;
+ᠸ↔w;
+ᡰ↔ž;
+᠈↔',';
+᠉↔'.';
+# Control characters
+\u180E→' ';
+\u202F→' ';
+[\u180A\u180B\u180C\u180D\u180F]→;
+# Digits (not really used in Manchu)
+᠐↔0;
+᠑↔1;
+᠒↔2;
+᠓↔3;
+᠔↔4;
+᠕↔5;
+᠖↔6;
+᠗↔7;
+᠘↔8;
+᠙↔9;

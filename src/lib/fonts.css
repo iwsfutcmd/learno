@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=CODE2001&family=Charm&family=Mitr&family=Moul&family=Noto+Naskh+Arabic&family=Noto+Nastaliq+Urdu&family=Noto+Sans+Armenian&family=Noto+Sans+Avestan&family=Noto+Sans+Bengali&family=Noto+Sans+Caucasian+Albanian&family=Noto+Sans+Cherokee&family=Noto+Sans+Devanagari&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Ethiopic&family=Noto+Sans+Georgian&family=Noto+Sans+Georgian&family=Noto+Sans+Grantha&family=Noto+Sans+Gujarati&family=Noto+Sans+Gurmukhi&family=Noto+Sans+HK&family=Noto+Sans+Hebrew&family=Noto+Sans+Imperial+Aramaic&family=Noto+Sans+JP&family=Noto+Sans+JP&family=Noto+Sans+Javanese&family=Noto+Sans+KR&family=Noto+Sans+Kaithi&family=Noto+Sans+Khmer&family=Noto+Sans+Linear+B&family=Noto+Sans+Malayalam&family=Noto+Sans+Mandaic&family=Noto+Sans+Modi&family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Old+Persian&family=Noto+Sans+Old+South+Arabian&family=Noto+Sans+Old+Turkic&family=Noto+Sans+Oriya&family=Noto+Sans+Phoenician&family=Noto+Sans+Samaritan&family=Noto+Sans+Symbols+2&family=Noto+Sans+Tamil&family=Noto+Sans+Thaana&family=Noto+Sans+Thai&family=Noto+Sans+Thai+Looped&family=Noto+Sans+Ugaritic&family=Noto+Serif+Armenian&family=Noto+Serif+Bengali&family=Noto+Serif+Devanagari&family=Noto+Serif+Ethiopic&family=Noto+Serif+Georgian&family=Noto+Serif+Georgian&family=Noto+Serif+Gujarati&family=Noto+Serif+Gurmukhi&family=Noto+Serif+Hebrew&family=Noto+Serif+JP&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+Khmer&family=Noto+Serif+Malayalam&family=Noto+Serif+Oriya&family=Noto+Serif+TC&family=Noto+Serif+Tamil&family=Noto+Serif+Thai&family=Noto+Serif+Tibetan&family=Sriracha&display=swap');
+@font-face {
+	font-family: 'Code2001';
+	src: url('/fonts/CODE2001.TTF') format('opentype');
+}
+@font-face {
+	font-family: 'MarathiCursive';
+	src: url('/fonts/MarathiCursive.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans Brahmi';
+	src: url('/fonts/NotoSansBrahmi-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans Kannada';
+	src: url('/fonts/NotoSansKannada[wdth,wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans Mongolian';
+	src: url('/fonts/NotoSansMongolian-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans Telugu';
+	src: url('/fonts/NotoSansTelugu[wdth,wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('/fonts/NotoSans[wdth,wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif Kannada';
+	src: url('/fonts/NotoSerifKannada[wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif Telugu';
+	src: url('/fonts/NotoSerifTelugu[wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('/fonts/NotoSerif[wdth,wght].ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Quivira';
+	src: url('/fonts/Quivira.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Righteous';
+	src: url('/fonts/Righteous-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_BiaoHei';
+	src: url('/fonts/XM_BiaoHei.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_GuFeng';
+	src: url('/fonts/XM_GuFeng.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_LiuYe';
+	src: url('/fonts/XM_LiuYe.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_ShuKai';
+	src: url('/fonts/XM_ShuKai.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_SM_WenJian';
+	src: url('/fonts/XM_WenJian.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_WenQin';
+	src: url('/fonts/XM_WenQin.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_XingShu';
+	src: url('/fonts/XM_XingShu.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_YaBai';
+	src: url('/fonts/XM_YaBai.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_YingBi';
+	src: url('/fonts/XM_YingBi.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_ZhengBai';
+	src: url('/fonts/XM_ZhengBai.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Fu_XM_ZhengHei';
+	src: url('/fonts/XM_ZhengHei.ttf') format('opentype');
+}

@@ -1,0 +1,99 @@
+:: NFC;
+
+$p = \uA9C0; # pangkon / virama
+$i = \uA9B6; # wulu / -i
+$u = \uA9B8; # suku / -u
+$e = \uA9BA; # taling / -é
+$E = \uA9BC; # pepet / -ê
+$o = \uA9BA\uA9B4; # taling tarung / -o
+$ng = \uA981; # cecak / -ng
+$r = \uA982; # layar / -r
+$h = \uA983; # wignyan / -h
+$ct = \uA9B3; # cecak telu / nukta
+$rE = \uA9BD; # keret / vocalic r
+$ya = \uA9BE; # pengkal / medial ya
+$ra = \uA9BF; # cakra / medial ra
+
+$jc = [ꦏ-ꦲ$ct$ya$ra];
+$jiv = [ꦄ-ꦎ];
+$jv = [\uA9B4-\uA9BD];
+$lc = [bc{dh}dghjklm{ng}{ny}nprs{th}twy];
+$lv = [aeiouéèêå];
+
+[AÅ] > ꦄ;
+[ÉÈ] > ꦌ;
+[EÊ] > ꦄꦼ;
+I > ꦆ;
+O > ꦎ;
+U > ꦈ;
+
+:: Lower;
+
+
+[^$lc] { ($lv) > |h $1;
+
+[$jc$jiv$jv] { ng } [^$lv] > $ng;
+[$jc$jiv$jv] { r } [^$lv] > $r;
+[$jc$jiv$jv] { h } [^$lv] > $h;
+
+r [eê] > ꦉ;
+l [eê] > ꦊ;
+
+b > ꦧ|$p;
+c > ꦕ|$p;
+dh > ꦝ|$p;
+d > ꦢ|$p;
+g > ꦒ|$p;
+h > ꦲ|$p;
+j > ꦗ|$p;
+k > ꦏ|$p;
+l > ꦭ|$p;
+m > ꦩ|$p;
+ng > ꦔ|$p;
+ny > ꦚ|$p;
+n } [cj] > ꦚ|$p;
+n > ꦤ|$p;
+p > ꦥ|$p;
+r > ꦫ|$p;
+s > ꦱ|$p;
+th > ꦛ|$p;
+t > ꦠ|$p;
+w > ꦮ|$p;
+y > ꦪ|$p;
+
+$p i > $i;
+$p u > $u;
+$p [éè] > $e;
+$p [eê] > $E;
+$p o > $o;
+$p r [eê] > $rE;
+$p [aå] > ;
+
+$p y > $ya|$p;
+$p r > $ra|$p;
+
+
+0 > ꧐;
+1 > ꧑;
+2 > ꧒;
+3 > ꧓;
+4 > ꧔;
+5 > ꧕;
+6 > ꧖;
+7 > ꧗;
+8 > ꧘;
+9 > ꧙;
+
+:: Null;
+
+([꧐-꧙]+) > ꧇ $1 ꧇;
+
+' ' > ;
+
+:: Null;
+
+$p { ',' > ' ';
+',' > '꧈ ';
+':' > '꧇ ';
+$p { '.' > '꧈ ';
+'.' > '꧉ ';

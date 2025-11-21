@@ -1,0 +1,116 @@
+# InterIndic-sa_Beng
+#:: NFD (NFC) ;
+\uE024\uE04D } [\uE024\uE025\uE028\uE02C\uE02E\uE02F\uE030\uE035]→ত্;  # non KHANDA TA 
+\uE024\uE04D→ৎ;  # KHANDA TA 
+#
+\uE001→\u0981;          # SIGN CANDRABINDU
+\uE002→ং;          # SIGN ANUSVARA
+\uE003→ঃ;          # SIGN VISARGA
+
+\uE005→অ;          # LETTER A
+\uE006→আ;          # LETTER AA
+\uE007→ই;          # LETTER I
+\uE008→ঈ;          # LETTER II
+\uE009→উ;          # LETTER U
+\uE00A→ঊ;          # LETTER UU
+\uE00B→ঋ;          # LETTER VOCALIC R
+\uE00C→ঌ;          # LETTER VOCALIC L
+
+
+\uE00F→এ;          # LETTER E
+\uE010→ঐ;          # LETTER AI
+
+
+\uE013→ও;          # LETTER O
+\uE014→ঔ;          # LETTER AU
+\uE015→ক;          # LETTER KA
+\uE016→খ;          # LETTER KHA
+\uE017→গ;          # LETTER GA
+\uE018→ঘ;          # LETTER GHA
+\uE019→ঙ;          # LETTER NGA
+\uE01A→চ;          # LETTER CA
+\uE01B→ছ;          # LETTER CHA
+\uE01C→জ;          # LETTER JA
+\uE01D→ঝ;          # LETTER JHA
+\uE01E→ঞ;          # LETTER NYA
+\uE01F→ট;          # LETTER TTA
+\uE020→ঠ;          # LETTER TTHA
+\uE021→ড;          # LETTER DDA
+\uE022→ঢ;          # LETTER DDHA
+\uE023→ণ;          # LETTER NNA
+\uE024→ত;          # LETTER TA
+\uE025→থ;          # LETTER THA
+\uE026→দ;          # LETTER DA
+\uE027→ধ;          # LETTER DHA
+\uE028→ন;          # LETTER NA
+
+\uE02A→প;          # LETTER PA
+\uE02B→ফ;          # LETTER PHA
+\uE02C→ব;          # LETTER BA
+\uE02D→ভ;          # LETTER BHA
+\uE02E→ম;          # LETTER MA
+\uE02F→য;          # LETTER YA
+\uE030→ৰ;          # LETTER RA
+
+\uE032→ল;          # LETTER LA
+\uE033→ল়;          # LLA
+
+\uE035→ৱ;          # LETTER WA
+\uE036→শ;          # LETTER SHA
+\uE037→ষ;          # LETTER SSA
+\uE038→স;          # LETTER SA
+\uE039→হ;          # LETTER HA
+
+
+
+\uE03D→ঽ;          # SIGN AVAGRAHA
+\uE03E→া;          # VOWEL SIGN AA
+\uE03F→ি;          # VOWEL SIGN I
+\uE040→ী;          # VOWEL SIGN II
+\uE041→\u09C1;          # VOWEL SIGN U
+\uE042→\u09C2;          # VOWEL SIGN UU
+\uE043→\u09C3;          # VOWEL SIGN VOCALIC R
+\uE044→\u09C4;          # VOWEL SIGN VOCALIC RR
+
+
+\uE047→ে;          # VOWEL SIGN E
+\uE048→ৈ;          # VOWEL SIGN AI
+
+
+\uE04B→ো;    # VOWEL SIGN O
+\uE04C→ৌ;    # VOWEL SIGN AU
+\uE04D→\u09CD;          # SIGN VIRAMA
+\uE04E→\u1CF5;
+\uE04F→\u1CF6;
+\uE050→ওং;    #  InterIndic-Bengali: OM
+\uE051→\u0951;
+\uE052→\u0952;
+
+
+
+
+
+
+
+
+
+
+
+
+
+\uE060→ৠ;          # LETTER VOCALIC RR
+\uE061→ৡ;          # LETTER VOCALIC LL
+\uE062→\u09E2;          # VOWEL SIGN VOCALIC L
+\uE063→\u09E3;          # VOWEL SIGN VOCALIC LL
+\uE064→।;          # DANDA
+\uE065→॥;          # DOUBLE DANDA
+\uE066→০;          # DIGIT ZERO
+\uE067→১;          # DIGIT ONE
+\uE068→২;          # DIGIT TWO
+\uE069→৩;          # DIGIT THREE
+\uE06A→৪;          # DIGIT FOUR
+\uE06B→৫;          # DIGIT FIVE
+\uE06C→৬;          # DIGIT SIX
+\uE06D→৭;          # DIGIT SEVEN
+\uE06E→৮;          # DIGIT EIGHT
+\uE06F→৯;          # DIGIT NINE

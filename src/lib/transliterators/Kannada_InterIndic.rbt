@@ -1,0 +1,113 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: Kannada_InterIndic.txt
+# Generated from CLDR
+#
+
+# Kannada-InterIndic
+::NFD;
+\u0CC6ೕ→\uE047;        # VOWEL SIGN EE
+\u0CC6\u0CCDೖ→\uE048\uE04D;        # VOWEL SIGN AI
+\u0CC6ೖ→\uE048;        # VOWEL SIGN AI
+\u0CC6ೂೕ→\uE04B;  # VOWEL SIGN OO
+\u0CC6ೂ→\uE04A;        # VOWEL SIGN O
+\u0CBFೕ→\uE040;        # VOWEL SIGN II
+\u0C81→\uE001;
+ಂ→\uE002;              # SIGN ANUSVARA
+ಃ→\uE003;              # SIGN VISARGA
+ಅ→\uE005;              # LETTER A
+ಆ→\uE006;              # LETTER AA
+ಇ→\uE007;              # LETTER I
+ಈ→\uE008;              # LETTER II
+ಉ→\uE009;              # LETTER U
+ಊ→\uE00A;              # LETTER UU
+ಋ→\uE00B;              # LETTER VOCALIC R
+ಌ→\uE00C;              # LETTER VOCALIC L
+ಎ→\uE00E;              # LETTER E
+ಏ→\uE00F;              # LETTER EE
+ಐ→\uE010;              # LETTER AI
+ಒ→\uE012;              # LETTER O
+ಓ→\uE013;              # LETTER OO
+ಔ→\uE014;              # LETTER AU
+ಕ→\uE015;              # LETTER KA
+ಖ→\uE016;              # LETTER KHA
+ಗ→\uE017;              # LETTER GA
+ಘ→\uE018;              # LETTER GHA
+ಙ→\uE019;              # LETTER NGA
+ಚ→\uE01A;              # LETTER CA
+ಛ→\uE01B;              # LETTER CHA
+ಜ→\uE01C;              # LETTER JA
+ಝ→\uE01D;              # LETTER JHA
+ಞ→\uE01E;              # LETTER NYA
+ಟ→\uE01F;              # LETTER TTA
+ಠ→\uE020;              # LETTER TTHA
+ಡ→\uE021;              # LETTER DDA
+ಢ→\uE022;              # LETTER DDHA
+ಣ→\uE023;              # LETTER NNA
+ತ→\uE024;              # LETTER TA
+ಥ→\uE025;              # LETTER THA
+ದ→\uE026;              # LETTER DA
+ಧ→\uE027;              # LETTER DHA
+ನ→\uE028;              # LETTER NA
+ಪ→\uE02A;              # LETTER PA
+ಫ→\uE02B;              # LETTER PHA
+ಬ→\uE02C;              # LETTER BA
+ಭ→\uE02D;              # LETTER BHA
+ಮ→\uE02E;              # LETTER MA
+ಯ→\uE02F;              # LETTER YA
+ರ→\uE030;              # LETTER RA
+ಱ→\uE031;              # LETTER RRA
+ಲ→\uE032;              # LETTER LA
+ಳ→\uE033;              # LETTER LLA
+ವ→\uE035;              # LETTER VA
+ಶ→\uE036;              # LETTER SHA
+ಷ→\uE037;              # LETTER SSA
+ಸ→\uE038;              # LETTER SA
+ಹ→\uE039;              # LETTER HA
+\u0CBC→\uE03C; # SIGN NUKTA
+ಽ→\uE03D;              # AVAGRAHA
+ಾ→\uE03E;              # VOWEL SIGN AA
+\u0CBF→\uE03F;              # VOWEL SIGN I
+\u0CC0→\uE040;
+ು→\uE041;              # VOWEL SIGN U
+ೂ→\uE042;              # VOWEL SIGN UU
+ೃ→\uE043;              # VOWEL SIGN VOCALIC R
+ೄ→\uE044;              # VOWEL SIGN VOCALIC RR
+\u0CC6→\uE046;              # VOWEL SIGN E
+\u0CC7→\uE047;
+\u0CC8→\uE048;
+\u0CCA→\uE04A;
+\u0CCB→\uE04B;
+\u0CCC→\uE04C;              # VOWEL SIGN AU
+\u0CCD→\uE04D;              # SIGN VIRAMA
+\u0CF1→\uE04E;
+\u0CF2→\uE04F;
+\u0951→\uE051;
+\u0952→\uE052;
+ೕ→\uE055;              # LENGTH MARK
+ೖ→\uE056;              # AI LENGTH MARK
+ೞ→\uE034;              # LETTER LLLA
+ೠ→\uE060;              # LETTER VOCALIC RR
+ೡ→\uE061;              # LETTER VOCALIC LL
+\u0CE2→\uE062;
+\u0CE3→\uE063;
+।→\uE064;
+॥→\uE065;
+೦→\uE066;              # DIGIT ZERO
+೧→\uE067;              # DIGIT ONE
+೨→\uE068;              # DIGIT TWO
+೩→\uE069;              # DIGIT THREE
+೪→\uE06A;              # DIGIT FOUR
+೫→\uE06B;              # DIGIT FIVE
+೬→\uE06C;              # DIGIT SIX
+೭→\uE06D;              # DIGIT SEVEN
+೮→\uE06E;              # DIGIT EIGHT
+೯→\uE06F;              # DIGIT NINE
+\u0CDD→\uE08A;
+\u0C84→\uE0C5;
+\u0C80→\uE0CA;
+\u0CF3→\uE0CB;
+# eof
+

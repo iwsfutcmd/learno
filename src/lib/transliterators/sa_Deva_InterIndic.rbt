@@ -1,0 +1,115 @@
+# sa_Deva-InterIndic
+:: NFD;
+#Rules for Decomposed characters
+\u0901→\uE001;  # SIGN CANDRABINDU
+\u0902→\uE002;  # SIGN ANUSVARA
+ः→\uE003;  # SIGN VISARGA
+
+अ→\uE005;  # LETTER A
+आ→\uE006;  # LETTER AA
+इ→\uE007;  # LETTER I
+ई→\uE008;  # LETTER II
+उ→\uE009;  # LETTER U
+ऊ→\uE00A;  # LETTER UU
+ऋ→\uE00B;  # LETTER VOCALIC R
+ऌ→\uE00C;  # LETTER VOCALIC L
+
+
+ए→\uE00F;  # LETTER E
+ऐ→\uE010;  # LETTER AI
+
+
+ओ→\uE013;  # LETTER O
+औ→\uE014;  # LETTER AU
+क→\uE015;  # LETTER KA
+ख→\uE016;  # LETTER KHA
+ग→\uE017;  # LETTER GA
+घ→\uE018;  # LETTER GHA
+ङ→\uE019;  # LETTER NGA
+च→\uE01A;  # LETTER CA
+छ→\uE01B;  # LETTER CHA
+ज→\uE01C;  # LETTER JA
+झ→\uE01D;  # LETTER JHA
+ञ→\uE01E;  # LETTER NYA
+ट→\uE01F;  # LETTER TTA
+ठ→\uE020;  # LETTER TTHA
+ड→\uE021;  # LETTER DDA
+ढ→\uE022;  # LETTER DDHA
+ण→\uE023;  # LETTER NNA
+त→\uE024;  # LETTER TA
+थ→\uE025;  # LETTER THA
+द→\uE026;  # LETTER DA
+ध→\uE027;  # LETTER DHA
+न→\uE028;  # LETTER NA
+
+प→\uE02A;  # LETTER PA
+फ→\uE02B;  # LETTER PHA
+ब→\uE02C;  # LETTER BA
+भ→\uE02D;  # LETTER BHA
+म→\uE02E;  # LETTER MA
+य→\uE02F;  # LETTER YA
+र→\uE030;  # LETTER RA
+
+ल→\uE032;  # LETTER LA
+ळ→\uE033;  # LETTER LLA
+
+व→\uE035;  # LETTER VA
+श→\uE036;  # LETTER SHA
+ष→\uE037;  # LETTER SSA
+स→\uE038;  # LETTER SA
+ह→\uE039;  # LETTER HA
+
+
+\u093C→;  # NUKTA (blown away)
+ऽ→\uE03D;  # SIGN AVAGRAHA
+ा→\uE03E;  # VOWEL SIGN AA
+ि→\uE03F;  # VOWEL SIGN I
+ी→\uE040;  # VOWEL SIGN II
+\u0941→\uE041;  # VOWEL SIGN U
+\u0942→\uE042;  # VOWEL SIGN UU
+\u0943→\uE043;  # VOWEL SIGN VOCALIC R
+\u0944→\uE044;  # VOWEL SIGN VOCALIC RR
+
+
+\u0947→\uE047;  # VOWEL SIGN E
+\u0948→\uE048;  # VOWEL SIGN AI
+
+
+ो→\uE04B;  # VOWEL SIGN O
+ौ→\uE04C;  # VOWEL SIGN AU
+\u094D→\uE04D;  # SIGN VIRAMA
+\u1CF5→\uE04E;  # JIHVAMULIYA
+\u1CF6→\uE04F;  # UPADHMANIYA
+ॐ→\uE050;  # OM
+\u0951→\uE051;  # STRESS SIGN UDATTA
+\u0952→\uE052;  # STRESS SIGN ANUDATTA
+
+
+
+
+
+
+
+
+
+
+
+
+
+ॠ→\uE060;  # LETTER VOCALIC RR
+ॡ→\uE061;  # LETTER VOCALIC LL
+\u0962→\uE062;  # VOWEL SIGN VOCALIC L
+\u0963→\uE063;  # VOWEL SIGN VOCALIC LL
+।→\uE064;  # DANDA
+॥→\uE065;  # DOUBLE DANDA
+०→\uE066;  # DIGIT ZERO
+१→\uE067;  # DIGIT ONE
+२→\uE068;  # DIGIT TWO
+३→\uE069;  # DIGIT THREE
+४→\uE06A;  # DIGIT FOUR
+५→\uE06B;  # DIGIT FIVE
+६→\uE06C;  # DIGIT SIX
+७→\uE06D;  # DIGIT SEVEN
+८→\uE06E;  # DIGIT EIGHT
+९→\uE06F;  # DIGIT NINE
+

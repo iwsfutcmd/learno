@@ -1,0 +1,157 @@
+:: NFD;
+:: lower;
+
+$cuinitial = [
+	p {ph} {mh} f
+	t {th} {nh} {lh}
+	{tz} {ts} s
+	c {ch} {sh} i
+	k {kh} {ngh} x
+	{kw} {khw} u
+	];
+$clinitial = [
+	b {bh} m v
+	d {dh} n l
+	{dz} {ds} z
+	j {jh} {zh} y
+	g {gh} {ng} h
+	{gw} {ghw} w
+	];
+$cinitial = [$cuinitial $clinitial];
+$cvowel = [a e {eu} i o u];
+
+$cfinal = [
+	$cvowel
+	{ax} {ex} {eux} {ix} {ox} {ux}
+	{ah} {eh} {euh} {ih} {oh} {uh}
+	{aai} {ai} {ei} {oai} {oi} {ui}
+	{aae} {ae} {ee} {oae} {oe} {ue}
+	{aay} {ay} {ey} {oay} {oy} {uy}
+	{aau} {au} {iu} {ou}
+	{aao} {ao} {io} {oo}
+	{aaw} {aw} {iw} {ow}
+	{aam} {am} {im}
+	{aamx} {amx} {imx}
+	{aamm} {amm} {imm}
+	{aap} {ap} {ip}
+	{aan} {an} {in} {oan} {on} {un}
+	{aanx} {anx} {inx} {oanx} {onx} {unx}
+	{aann} {ann} {inn} {oann} {onn} {unn}
+	{aat} {at} {it} {oat} {ot} {ut}
+	{aang} {ang} {eang} {eng} {eung} {oang} {ong}
+	{aag} {ag} {eag} {eg} {eug} {oag} {og}
+	{aaq} {aq} {eaq} {eq} {euq} {oaq} {oq}
+	{aak} {ak} {eak} {ek} {euk} {oak} {ok}
+	];
+$s = \uE000; # syllable boundary markers
+$e = \uE001;
+
+\u0308 → ; #remove umlaut
+
+:: Null;
+
+($cinitial $cfinal) } $cinitial $cfinal → $s $1 $e;
+($cinitial $cvowel) } $cinitial $cfinal → $s $1 $e;
+($cinitial $cfinal) → $s $1 $e;
+($cvowel) } $cinitial $cfinal → $s $1 $e;
+($cfinal) → $s $1 $e;
+
+
+:: Null;
+ng } $e → ng 平;
+[a e o u] { e } $e → i 上;
+[a i o] { o } $e → u 上;
+g } $e → ng 上;
+x } $e → 上;
+y } $e → i 去;
+w } $e → u 去;
+mm } $e → m 去;
+nn } $e → n 去;
+q } $e → ng 去;
+h } $e → 去;
+([p t k]) } $e → $1 入;
+
+:: Null;
+
+([^平上去入]) } $e → $1 平;
+
+:: Null;
+
+$s { ($cuinitial $cfinal) ([平上去入]) → $1 陰 $2;
+$s { ($clinitial $cfinal) ([平上去入]) → $1 陽 $2;
+[^陽] { ([平上去入]) → 陰 $1;
+
+:: Null;
+
+'' → ;
+
+$tone = [陰陽];
+
+$s { [d t] z → z;
+$s { [d t] s → c;
+$s { [j c] h → c;
+$s { [z s] h → s;
+$s { ng h? → ng;
+$s { [g k] hw → kw;
+$s { [g k] w → gw;
+$s { [b p] h → p;
+$s { [b p] → b;
+$s { m h? → m;
+$s { [v f] → f;
+$s { [d t] h → t;
+$s { [d t] → d;
+$s { n h? → n;
+$s { l h? → l;
+$s { [z s] → s;
+$s { [j c] → z;
+$s { [y i] } $cfinal → j;
+$s { [g k] h → k;
+$s { [g k] → g;
+$s { [h x] → h;
+$s { [w u] } $cfinal → w;
+
+:: Null;
+mu } $tone → m;
+ngu } $tone → ng;
+[p b m f w $s] { u → u;
+[a i o] { u } $tone → u;
+u → yu;
+aa → aa;
+oa → o;
+ea → e;
+eu → oe;
+a } $tone → aa;
+a → a;
+o } $tone → o;
+o } [{ng} k] → u;
+o } [i n t] → eo;
+o → o;
+e } $tone → e;
+e } [{ng} k] → i;
+e → e;
+:: Null;
+
+
+陰平 → 1;
+陰上 → 2;
+陰去 → 3;
+[{aa} e {yu}] [ptk] { 陰入 → 3;
+[i u] [pt] { 陰入 → 3;
+[^e] o [tk] { 陰入 → 3;
+
+陰入 → 1;
+陽平 → 4;
+陽上 → 5;
+陽去 → 6;
+陽入 → 6;
+
+:: Null;
+
+[$s $e] → ;
+
+:: Null;
+
+[1-6] \* → 2;
+[1-6] ° → 1;
+
+:: NFC;

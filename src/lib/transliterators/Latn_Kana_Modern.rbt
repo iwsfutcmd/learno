@@ -1,0 +1,21 @@
+$vowel = [aeoiu];
+'-' < ＝;
+' ' < ・;
+w < 'u~w';
+y < 'i~y';
+y < 'i~';
+w < 'u~';
+v < 'vu~';
+s < 'su~';
+z < 'zu~';
+t < 'to~';
+t < 'te~';
+d < 'do~';
+d < 'de~';
+f < 'fu~';
+f < 'fi~';
+h < 'ho~';
+< '゜';
+l < 'r' } $vowel '゜';
+
+:: und_Latn_hepburnx-und_Kana;

@@ -1,0 +1,222 @@
+# © 2016 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+# Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+#
+# File: InterIndic_Tamil.txt
+# Generated from CLDR
+#
+
+# InterIndic-Tamil
+#:: NFD (NFC) ;
+\uE001→\U00011301; # FALLBACK SIGN CANDRABINDU
+\uE002→\u0B82; # SIGN ANUSVARA
+\uE003→ஃ; # SIGN VISARGA
+\uE004→அ; # FALLBACK TO LETTER A
+\uE005→அ; # LETTER A
+\uE006→ஆ; # LETTER AA
+\uE007→இ; # LETTER I
+\uE008→ஈ; # LETTER II
+\uE009→உ; # LETTER U
+\uE00A→ஊ; # LETTER UU
+\uE00B→ரி; # REMAP (indicExceptions.txt): \u0B8B→ரி = LETTER VOCALIC R→LETTER RA.VOWEL SIGN I
+\uE00C→ல; # FALLBACK LETTER LA
+\uE00D→ஏ; # FALLBACK
+\uE00E→எ; # LETTER E
+\uE00F→ஏ; # LETTER EE
+\uE010→ஐ; # LETTER AI
+\uE011→ஒ; # FALLBACK
+\uE012→ஒ; # LETTER O
+\uE013→ஓ; # LETTER OO
+\uE014→ஔ; # LETTER AU
+\uE015→க; # LETTER KA
+\uE016→க; # REMAP (indicExceptions.txt): \u0B96→க = LETTER KHA→LETTER KA
+\uE017→க; # REMAP (indicExceptions.txt): \u0B97→க = LETTER GA→LETTER KA
+\uE018→க; # REMAP (indicExceptions.txt): \u0B98→க = LETTER GHA→LETTER KA
+\uE019→ங; # LETTER NGA
+\uE01A→ச; # LETTER CA
+\uE01B→ச; # REMAP (indicExceptions.txt): \u0B9B→ச = LETTER CHA→LETTER CA
+\uE01C→ஜ; # LETTER JA
+\uE01D→ச; # REMAP (indicExceptions.txt): \u0B9D→ச = LETTER JHA→LETTER CA
+\uE01E→ஞ; # LETTER NYA
+\uE01F→ட; # LETTER TTA
+\uE020→ட; # REMAP (indicExceptions.txt): \u0BA0→ட = LETTER TTHA→LETTER TTA
+\uE021→ட; # REMAP (indicExceptions.txt): \u0BA1→ட = LETTER DDA→LETTER TTA
+\uE022→ட; # REMAP (indicExceptions.txt): \u0BA2→ட = LETTER DDHA→LETTER TTA
+\uE023→ண; # LETTER NNA
+\uE024→த; # LETTER TA
+\uE025→த; # REMAP (indicExceptions.txt): \u0BA5→த = LETTER THA→LETTER TA
+\uE026→த; # REMAP (indicExceptions.txt): \u0BA6→த = LETTER DA→LETTER TA
+\uE027→த; # REMAP (indicExceptions.txt): \u0BA7→த = LETTER DHA→LETTER TA
+\uE028\uE03C→ன;
+\uE028→ந; # LETTER NA
+\uE029→ன; # LETTER NNNA
+\uE02A→ப; # LETTER PA
+\uE02B→ப; # REMAP (indicExceptions.txt): \u0BAB→ப = LETTER PHA→LETTER PA
+\uE02C→ப; # REMAP (indicExceptions.txt): \u0BAC→ப = LETTER BA→LETTER PA
+\uE02D→ப; # REMAP (indicExceptions.txt): \u0BAD→ப = LETTER BHA→LETTER PA
+\uE02E→ம; # LETTER MA
+\uE02F→ய; # LETTER YA
+\uE030\uE03C→ற;
+\uE030→ர; # LETTER RA
+\uE031→ற; # LETTER RRA
+\uE032→ல; # LETTER LA
+\uE033\uE03C→ழ;
+\uE033→ள; # LETTER LLA
+\uE034→ழ; # LETTER LLLA
+\uE035→வ; # LETTER VA
+\uE036→ஶ; # REMAP (indicExceptions.txt): ஶ→ஷ = LETTER SHA→LETTER SSA
+\uE037→ஷ; # LETTER SSA
+\uE038→ஸ; # LETTER SA
+\uE039→ஹ; # LETTER HA
+\uE03A→।;
+\uE03B→॥;
+\uE03C→\U0001133C;
+\uE03D→; # FALLBACK BLOW AWAY AVAGRAHA
+\uE03E→ா; # VOWEL SIGN AA
+\uE03F→ி; # VOWEL SIGN I
+\uE040→\u0BC0; # VOWEL SIGN II
+\uE041→ு; # VOWEL SIGN U
+\uE042→ூ; # VOWEL SIGN UU
+\uE043→\u0BCDரி; # REMAP (indicExceptions.txt): \u0BC3→\u0BCDரி = VOWEL SIGN VOCALIC R→SIGN VIRAMA.LETTER RA.VOWEL SIGN I
+\uE044→\u0BCDரி; # REMAP (indicExceptions.txt): \u0BC4→\u0BCDரி = VOWEL SIGN VOCALIC RR→SIGN VIRAMA.LETTER RA.VOWEL SIGN I
+\uE045→ா; # REMAP (indicExceptions.txt): \u0BC5→ா = VOWEL SIGN CANDRA E→VOWEL SIGN AA
+\uE046→ெ; # VOWEL SIGN E
+\uE047→ே; # VOWEL SIGN EE
+\uE048→ை; # VOWEL SIGN AI
+\uE049→ா; # REMAP (indicExceptions.txt): \u0BC9→ா = VOWEL SIGN CANDRA O→VOWEL SIGN AA
+\uE04A→ொ; # VOWEL SIGN O
+\uE04B→ோ; # VOWEL SIGN OO
+\uE04C→ௌ; # VOWEL SIGN AU
+\uE04D→\u0BCD; # SIGN VIRAMA
+\uE04E→ஃ;
+\uE04F→ஃ;
+\uE050→ௐ;
+\uE051→\u0951;
+\uE052→\u0952;
+\uE053→;
+\uE054→;
+\uE055→; # UNMAPPED InterIndic-Tamil: LENGTH MARK
+\uE056→ை; # REMAP (indicExceptions.txt): \u0BD6→ை = AI LENGTH MARK→VOWEL SIGN AI
+\uE057→ௗ; # AU LENGTH MARK
+\uE058→க; # FALLBACK
+\uE059→க; # REMAP (indicExceptions.txt): \u0BD9→க = LETTER KHHA→LETTER KA
+\uE05A→க; # REMAP (indicExceptions.txt): \u0BDA→க = LETTER GHHA→LETTER KA
+\uE05B→ஜ; # REMAP (indicExceptions.txt): \u0BDB→ஜ = LETTER ZA→LETTER JA
+\uE05C→த; # FALLBACK
+\uE05D→ட; # REMAP (indicExceptions.txt): \u0BDD→ட = LETTER RHA→LETTER TTA
+\uE05E→ப; # REMAP (indicExceptions.txt): \u0BDE→ப = LETTER FA→LETTER PA
+\uE05F→ய; # REMAP (indicExceptions.txt): \u0BDF→ய = LETTER YYA→LETTER YA
+\uE060→ரி; # REMAP (indicExceptions.txt): \u0BE0→ரி = LETTER VOCALIC RR→LETTER RA.VOWEL SIGN I
+\uE061→ள; # FALLBACK LETTER LLA
+\uE062→ி; # FALLBACK VOWEL SIGN VOCALIC L
+\uE063→\u0BC0; # FALLBACK VOWEL SIGN VOCALIC LL
+\uE064→।;
+\uE065→॥;
+\uE066→\u0BE6; # FALLBACK DIGIT ZERO
+\uE067→௧; # DIGIT ONE
+\uE068→௨; # DIGIT TWO
+\uE069→௩; # DIGIT THREE
+\uE06A→௪; # DIGIT FOUR
+\uE06B→௫; # DIGIT FIVE
+\uE06C→௬; # DIGIT SIX
+\uE06D→௭; # DIGIT SEVEN
+\uE06E→௮; # DIGIT EIGHT
+\uE06F→௯; # DIGIT NINE
+\uE070→;  # ABBREVIATION SIGN
+\uE071→ர; # LETTER RA WITH MIDDLE DIAGONAL
+\uE072→வ; # LETTER RA WITH LOWER DIAGONAL
+\uE073→;       # RUPEE MARK
+\uE074→௹;       # RUPEE SIGN
+\uE075→;       # CURRENCY NUMERATOR ONE
+\uE076→;       # CURRENCY NUMERATOR TWO
+\uE077→;       # CURRENCY NUMERATOR THREE
+\uE078→;       # CURRENCY NUMERATOR FOUR
+\uE079→;       # CURRENCY NUMERATOR ONE LESS THAN THE DENOMINATOR
+\uE07A→;       # CURRENCY DENOMINATOR SIXTEEN
+\uE07B→;       # ISSHAR
+\uE07C→;       # TIPPI
+\uE07D([\uE000-\uE0FF] \uE03C?)→ |$1 \uE04D $1; # ADDAK
+\uE07E→;       # IRI
+\uE07F→;       # URA
+\uE080→;       # EK ONKAR
+\uE081→வ; # FALLBACK FOR ORIYA LETTER WA
+\uE082→;       # Devanagari Glottal Stop
+\uE083→த\u0BCD;  # Bengali Khanda-ta
+\uE084→அ;
+\uE085→்;
+\uE086→க்;
+\uE087→ங்;
+\uE088→ச்;
+\uE089→ண்;
+\uE08A→ந்;
+\uE08B→ப்;
+\uE08C→ம்;
+\uE08D→ய்;
+\uE08E→ர்;
+\uE08F→ல்;
+\uE090→வ்;
+\uE091→ஷ்;
+\uE092→ள்;
+\uE093→ழ்;
+\uE094→ற்;
+\uE095→்ய;
+\uE096→்ர;
+\uE097→்வ;
+\uE098→்ஹ;
+\uE099→ர்;
+\uE09A→த்ஸ;
+\uE09B→த்ஸ;
+\uE09C→த்ஸ;
+\uE09D→ஃஜ;
+\uE09E→ல்ஹ;
+\uE09F→ஃவ;
+\uE0A0→ஃஶ;
+\uE0A1→ஜ்ஞ;
+\uE0A2→அ;
+\uE0A3→ஆ;
+\uE0A4→ஔ;
+\uE0A5→அு;
+\uE0A6→அூ;
+\uE0A7→ஐ;
+\uE0A8→ெ;
+\uE0A9→ே;
+\uE0AA→ௌ;
+\uE0AB→ு;
+\uE0AC→ூ;
+\uE0AD→ை;
+\uE0AE→ொஇ;
+\uE0AF→ே;
+\uE0B0→ை;
+\uE0B1→ோ;
+\uE0B2→ௌ;
+\uE0B3→ஈ;
+\uE0B4→ா;
+\uE0B5→ே;
+\uE0B6→ட;
+\uE0B7→ஃய;
+\uE0B8→ஃக;
+\uE0B9→ஃச;
+\uE0BA→ஃட;
+\uE0BB→ஃப;
+\uE0BC→ங்க;
+\uE0BD→ஞ்ச;
+\uE0BE→ண்ட;
+\uE0BF→ந்த;
+\uE0C0→ம்ப;
+\uE0C1→ற;
+\uE0C2→ற;
+\uE0C3→ள;
+\uE0C4→ர;
+\uE0C5→\U00011FFF;
+\uE0C6→\U00011FFF;
+\uE0C7→;
+\uE0C8→;
+\uE0C9→ௐ;
+\uE0CA→\U00011301;
+\uE0CB→ஂ;
+\uE0CC→்;
+\uE0CD→;
+\uE0CE→;
+#    :: NFC (NFD) ;
+# eof
+
