@@ -35,7 +35,8 @@
 		keySize,
 		showWeight,
 		addInversions,
-		sortedAnswers
+		sortedAnswers,
+		offline
 	} from '../stores';
 	import indicScripts from '$lib/indicScripts.json';
 	import scriptAliasesJson from '$lib/scriptAliases.json';
@@ -314,6 +315,12 @@
 				<input class="binary" type="checkbox" id="add-inversions" bind:checked={$addInversions} />
 				<label class="option-button icon" for="add-inversions">
 					<div class="material-symbols-outlined">compare_arrows</div>
+				</label>
+			</form>
+			<form>
+				<input class="binary" type="checkbox" id="offline" bind:checked={$offline} />
+				<label class="option-button icon" for="offline">
+					<div class="material-symbols-outlined">flight</div>
 				</label>
 			</form>
 			<form>

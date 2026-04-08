@@ -114,18 +114,22 @@
 		const correctAnswer = questions[prompt];
 		let weights = weightCache[prompt];
 		if (!weights) {
-			const promptWeights = await fetch('api/learno_get', {
-				method: 'POST',
-				headers: {
-					Accept: 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					fromLocale: $fromLocaleString,
-					toLocale: $toLocaleString,
-					question: prompt
-				})
-			}).then((r) => r.json());
+			const promptWeights = $offline
+				? {}
+				: await fetch('api/learno_get', {
+						method: 'POST',
+						headers: {
+							Accept: 'application/json',
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({
+							fromLocale: $fromLocaleString,
+							toLocale: $toLocaleString,
+							question: prompt
+						})
+					})
+						.then((r) => r.json())
+						.catch(() => ({}));
 			const answers = Object.values(questions);
 			weights = [
 				...answers.filter((answer) => answer !== questions[prompt]),
@@ -155,20 +159,22 @@
 			correct = false;
 			mistakes = [answer, ...mistakes];
 			weightCache[prompt][answer] += 1;
-			fetch('api/learno_update', {
-				method: 'POST',
-				headers: {
-					Accept: 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					fromLocale: $fromLocaleString,
-					toLocale: $toLocaleString,
-					question: prompt,
-					answer: answer,
-					inc: 1
-				})
-			});
+			if (!$offline) {
+				fetch('api/learno_update', {
+					method: 'POST',
+					headers: {
+						Accept: 'application/json',
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						fromLocale: $fromLocaleString,
+						toLocale: $toLocaleString,
+						question: prompt,
+						answer: answer,
+						inc: 1
+					})
+				});
+			}
 		}
 	};
 

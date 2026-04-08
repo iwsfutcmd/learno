@@ -46,7 +46,7 @@ export const numAnswers = writable(16);
 export const initialFetch = writable(true);
 export const showWeight = writable(false);
 export const addInversions = writable(false);
-export const offline = writable(true);
+export const offline = writable(false);
 export const sortedAnswers = writable(false);
 export const fromFontSize = writable(64);
 export const toFontSize = writable(32);
@@ -81,6 +81,7 @@ if (browser) {
 	showWeight.set(url.searchParams.get('weight') === 'true');
 	addInversions.set(url.searchParams.get('inv') === 'true');
 	sortedAnswers.set(url.searchParams.get('sorted') === 'true');
+	offline.set(url.searchParams.get('offline') === 'true');
 	fromFontSize.set(parseInt(url.searchParams.get('fromFontSize') ?? '64'));
 	toFontSize.set(parseInt(url.searchParams.get('toFontSize') ?? '32'));
 
@@ -150,6 +151,9 @@ if (browser) {
 	sortedAnswers.subscribe((val) => {
 		updateUrlParam('sorted', val.toString());
 	});
+	offline.subscribe((val) => {
+		updateUrlParam('offline', val.toString());
+	});
 	fromFontSize.subscribe((val) => {
 		updateUrlParam('fromFontSize', val.toString());
 	});
@@ -179,6 +183,7 @@ if (browser) {
 	currentUrl.searchParams.set('weight', get(showWeight).toString());
 	currentUrl.searchParams.set('inv', get(addInversions).toString());
 	currentUrl.searchParams.set('sorted', get(sortedAnswers).toString());
+	currentUrl.searchParams.set('offline', get(offline).toString());
 	currentUrl.searchParams.set('fromFontSize', get(fromFontSize).toString());
 	currentUrl.searchParams.set('toFontSize', get(toFontSize).toString());
 	window.history.replaceState({}, '', currentUrl.href);
