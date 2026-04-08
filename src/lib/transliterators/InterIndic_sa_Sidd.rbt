@@ -1,0 +1,116 @@
+# InterIndic-sa_Sidd		
+:: NFD (NFC) ;		
+\uE030\uE041 →	𑖨𑗜;	# RA + ALTERNATE U
+\uE030\uE042 →	𑖨𑗝;	# RA + ALTERNATE UU
+\uE001 →	𑖼;	# SIGN CANDRABINDU
+\uE002 →	𑖽;	# SIGN ANUSVARA
+\uE003 →	𑖾;	# SIGN VISARGA
+		
+\uE005 →	𑖀;	# LETTER A
+\uE006 →	𑖁;	# LETTER AA
+\uE007 →	𑖂;	# LETTER I
+\uE008 →	𑖃;	# LETTER II
+\uE009 →	𑖄;	# LETTER U
+\uE00A →	𑖅;	# LETTER UU
+\uE00B →	𑖆;	# LETTER VOCALIC R
+\uE00C →	𑖈;	# LETTER VOCALIC L
+		
+		
+\uE00F →	𑖊;	# LETTER E
+\uE010 →	𑖋;	# LETTER AI
+		
+		
+\uE013 →	𑖌;	# LETTER O
+\uE014 →	𑖍;	# LETTER AU
+\uE015 →	𑖎;	# LETTER KA
+\uE016 →	𑖏;	# LETTER KHA
+\uE017 →	𑖐;	# LETTER GA
+\uE018 →	𑖑;	# LETTER GHA
+\uE019 →	𑖒;	# LETTER NGA
+\uE01A →	𑖓;	# LETTER CA
+\uE01B →	𑖔;	# LETTER CHA
+\uE01C →	𑖕;	# LETTER JA
+\uE01D →	𑖖;	# LETTER JHA
+\uE01E →	𑖗;	# LETTER NYA
+\uE01F →	𑖘;	# LETTER TTA
+\uE020 →	𑖙;	# LETTER TTHA
+\uE021 →	𑖚;	# LETTER DDA
+\uE022 →	𑖛;	# LETTER DDHA
+\uE023 →	𑖜;	# LETTER NNA
+\uE024 →	𑖝;	# LETTER TA
+\uE025 →	𑖞;	# LETTER THA
+\uE026 →	𑖟;	# LETTER DA
+\uE027 →	𑖠;	# LETTER DHA
+\uE028 →	𑖡;	# LETTER NA
+		
+\uE02A →	𑖢;	# LETTER PA
+\uE02B →	𑖣;	# LETTER PHA
+\uE02C →	𑖤;	# LETTER BA
+\uE02D →	𑖥;	# LETTER BHA
+\uE02E →	𑖦;	# LETTER MA
+\uE02F →	𑖧;	# LETTER YA
+\uE030 →	𑖨;	# LETTER RA
+		
+\uE032 →	𑖩;	# LETTER LA
+\uE033 →	𑖩𑗀;	# LETTER LLA
+		
+\uE035 →	𑖪;	# LETTER VA
+\uE036 →	𑖫;	# LETTER SHA
+\uE037 →	𑖬;	# LETTER SSA
+\uE038 →	𑖭;	# LETTER SA
+\uE039 →	𑖮;	# LETTER HA
+		
+		
+		
+\uE03D →	;	# SIGN AVAGRAHA
+\uE03E →	𑖯;	# VOWEL SIGN AA
+\uE03F →	𑖰;	# VOWEL SIGN I
+\uE040 →	𑖱;	# VOWEL SIGN II
+\uE041 →	𑖲;	# VOWEL SIGN U
+\uE042 →	𑖳;	# VOWEL SIGN UU
+\uE043 →	𑖴;	# VOWEL SIGN VOCALIC R
+\uE044 →	𑖵;	# VOWEL SIGN VOCALIC RR
+		
+		
+\uE047 →	𑖸;	# VOWEL SIGN E
+\uE048 →	𑖹;	# VOWEL SIGN AI
+		
+		
+\uE04B →	𑖺;	# VOWEL SIGN O
+\uE04C →	𑖻;	# VOWEL SIGN AU
+\uE04D →	𑖿;	# SIGN VIRAMA
+\uE04E →	𑖾;	# JIHVAMULIYA
+\uE04F →	𑖾;	# UPADHMANIYA
+\uE050 →	𑖌𑖼;	# OM
+\uE051 →	॑;	# STRESS SIGN UDATTA
+\uE052 →	॒;	# STRESS SIGN ANUDATTA
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+\uE060 →	𑖇;	# LETTER VOCALIC RR
+\uE061 →	𑖉;	# LETTER VOCALIC LL
+\uE062 →	𑖿𑖈;	# VOWEL SIGN VOCALIC L
+\uE063 →	𑖿𑖉;	# VOWEL SIGN VOCALIC LL
+\uE064 →	𑗂;	# DANDA
+\uE065 →	𑗃;	# DOUBLE DANDA
+\uE066 →	𑁦;	# DIGIT ZERO
+\uE067 →	𑁧;	# DIGIT ONE
+\uE068 →	𑁨;	# DIGIT TWO
+\uE069 →	𑁩;	# DIGIT THREE
+\uE06A →	𑁪;	# DIGIT FOUR
+\uE06B →	𑁫;	# DIGIT FIVE
+\uE06C →	𑁬;	# DIGIT SIX
+\uE06D →	𑁭;	# DIGIT SEVEN
+\uE06E →	𑁮;	# DIGIT EIGHT
+\uE06F →	𑁯;	# DIGIT NINE
+\uE0C5 →	\U000115C1;

@@ -1,4 +1,4 @@
-import { writable, readonly } from 'svelte/store';
+import { writable, readonly, get } from 'svelte/store';
 import type { Writable } from 'svelte/store';
 import { parse } from 'bcp-47';
 import { browser } from '$app/environment';
@@ -61,41 +61,128 @@ toLocaleString.subscribe((val) => _toLocale.set(parse(val)));
 
 if (browser) {
 	const url = new URL(window.location.href);
+
+	// Read all values from URL first
 	baseLocaleString.set(url.searchParams.get('base') || 'sa-Deva');
-	baseLocaleString.subscribe((val) => {
-		url.searchParams.set('base', val);
-		window.history.pushState({}, '', url);
-	});
 	fromLocaleString.set(url.searchParams.get('from') || 'sa-Deva');
-	fromLocaleString.subscribe((val) => {
-		url.searchParams.set('from', val);
-		window.history.pushState({}, '', url);
-	});
 	toLocaleString.set(url.searchParams.get('to') || 'sa-Latn-iso15919');
-	toLocaleString.subscribe((val) => {
-		url.searchParams.set('to', val);
-		window.history.pushState({}, '', url);
-	});
 	numAnswers.set(parseInt(url.searchParams.get('n') ?? '4'));
-	numAnswers.subscribe((val) => {
-		url.searchParams.set('n', val.toString());
-		window.history.pushState({}, '', url);
-	});
-	sortedAnswers.set(url.searchParams.get('sort') === 'y');
-	sortedAnswers.subscribe((val) => {
-		url.searchParams.set('sort', val ? 'y' : 'n')
-		window.history.pushState({}, '', url);
-	})
+	fromFont.set(url.searchParams.get('ff') || '');
+	toFont.set(url.searchParams.get('tf') || '');
+	hardMode.set(url.searchParams.get('hard') === 'true');
+	withConjuncts.set(parseInt(url.searchParams.get('conj') ?? '1'));
+	withIndepVowels.set(parseInt(url.searchParams.get('vowels') ?? '1'));
+	withDigits.set(parseInt(url.searchParams.get('digits') ?? '1'));
+	withCase.set(parseInt(url.searchParams.get('case') ?? '0'));
+	randomizeFromFont.set(url.searchParams.get('randf') === 'true');
+	randomizeToFont.set(url.searchParams.get('randt') === 'true');
+	lineHeight.set(parseInt(url.searchParams.get('lh') ?? '0'));
+	keySize.set(parseInt(url.searchParams.get('ks') ?? '0'));
+	showWeight.set(url.searchParams.get('weight') === 'true');
+	addInversions.set(url.searchParams.get('inv') === 'true');
+	sortedAnswers.set(url.searchParams.get('sorted') === 'true');
 	fromFontSize.set(parseInt(url.searchParams.get('fromFontSize') ?? '64'));
-	fromFontSize.subscribe((val) => {
-		url.searchParams.set('fromFontSize', val.toString())
-		window.history.pushState({}, '', url);
-	})
 	toFontSize.set(parseInt(url.searchParams.get('toFontSize') ?? '32'));
+
+	// Global flag to prevent URL updates during initialization
+	let initializing = true;
+
+	// Helper to update URL parameter
+	const updateUrlParam = (key: string, value: string) => {
+		if (initializing) return;
+		const url = new URL(window.location.href);
+		url.searchParams.set(key, value);
+		window.history.replaceState({}, '', url.href);
+	};
+
+	// Set up subscribers for future changes
+	baseLocaleString.subscribe((val) => {
+		updateUrlParam('base', val);
+	});
+	fromLocaleString.subscribe((val) => {
+		updateUrlParam('from', val);
+	});
+	toLocaleString.subscribe((val) => {
+		updateUrlParam('to', val);
+	});
+	numAnswers.subscribe((val) => {
+		updateUrlParam('n', val.toString());
+	});
+	fromFont.subscribe((val) => {
+		updateUrlParam('ff', val);
+	});
+	toFont.subscribe((val) => {
+		updateUrlParam('tf', val);
+	});
+	hardMode.subscribe((val) => {
+		updateUrlParam('hard', val.toString());
+	});
+	withConjuncts.subscribe((val) => {
+		updateUrlParam('conj', val.toString());
+	});
+	withIndepVowels.subscribe((val) => {
+		updateUrlParam('vowels', val.toString());
+	});
+	withDigits.subscribe((val) => {
+		updateUrlParam('digits', val.toString());
+	});
+	withCase.subscribe((val) => {
+		updateUrlParam('case', val.toString());
+	});
+	randomizeFromFont.subscribe((val) => {
+		updateUrlParam('randf', val.toString());
+	});
+	randomizeToFont.subscribe((val) => {
+		updateUrlParam('randt', val.toString());
+	});
+	lineHeight.subscribe((val) => {
+		updateUrlParam('lh', val.toString());
+	});
+	keySize.subscribe((val) => {
+		updateUrlParam('ks', val.toString());
+	});
+	showWeight.subscribe((val) => {
+		updateUrlParam('weight', val.toString());
+	});
+	addInversions.subscribe((val) => {
+		updateUrlParam('inv', val.toString());
+	});
+	sortedAnswers.subscribe((val) => {
+		updateUrlParam('sorted', val.toString());
+	});
+	fromFontSize.subscribe((val) => {
+		updateUrlParam('fromFontSize', val.toString());
+	});
 	toFontSize.subscribe((val) => {
-		url.searchParams.set('toFontSize', val.toString())
-		window.history.pushState({}, '', url);
-	})
+		updateUrlParam('toFontSize', val.toString());
+	});
+
+	// Mark initialization complete and write all current values to URL
+	initializing = false;
+
+	const currentUrl = new URL(window.location.href);
+	currentUrl.searchParams.set('base', get(baseLocaleString));
+	currentUrl.searchParams.set('from', get(fromLocaleString));
+	currentUrl.searchParams.set('to', get(toLocaleString));
+	currentUrl.searchParams.set('n', get(numAnswers).toString());
+	currentUrl.searchParams.set('ff', get(fromFont));
+	currentUrl.searchParams.set('tf', get(toFont));
+	currentUrl.searchParams.set('hard', get(hardMode).toString());
+	currentUrl.searchParams.set('conj', get(withConjuncts).toString());
+	currentUrl.searchParams.set('vowels', get(withIndepVowels).toString());
+	currentUrl.searchParams.set('digits', get(withDigits).toString());
+	currentUrl.searchParams.set('case', get(withCase).toString());
+	currentUrl.searchParams.set('randf', get(randomizeFromFont).toString());
+	currentUrl.searchParams.set('randt', get(randomizeToFont).toString());
+	currentUrl.searchParams.set('lh', get(lineHeight).toString());
+	currentUrl.searchParams.set('ks', get(keySize).toString());
+	currentUrl.searchParams.set('weight', get(showWeight).toString());
+	currentUrl.searchParams.set('inv', get(addInversions).toString());
+	currentUrl.searchParams.set('sorted', get(sortedAnswers).toString());
+	currentUrl.searchParams.set('fromFontSize', get(fromFontSize).toString());
+	currentUrl.searchParams.set('toFontSize', get(toFontSize).toString());
+	window.history.replaceState({}, '', currentUrl.href);
+
 	fromCharsMap.set(JSON.parse(localStorage.getItem('fromCharsMap') || '{}'));
 	fromCharsMap.subscribe((val) => localStorage.setItem('fromCharsMap', JSON.stringify(val)));
 	toCharsMap.set(JSON.parse(localStorage.getItem('toCharsMap') || '{}'));
