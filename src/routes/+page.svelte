@@ -311,7 +311,7 @@
 							{transliterate(
 								$toLocaleString,
 								$fromLocaleString,
-								answer.replace(invH, '').normalize('NFC')
+								answer.replace(invH, '').normalize('NFD')
 							)}
 						</div>
 						{#if flipH}

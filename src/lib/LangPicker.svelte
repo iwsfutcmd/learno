@@ -112,6 +112,13 @@
 					language: locale.language === 'und' ? $baseLocale.language : locale.language
 				})
 			)
+			.filter((localeString) => {
+				const pairs = [
+					...($localePairs[localeString] || []),
+					...($localePairs[localeStringFallback(localeString)] || [])
+				];
+				return pairs.length > 0;
+			})
 			.filter((value, index, array) => array.indexOf(value) === index)
 			.sort();
 		if (!fromLocaleStrings.includes($fromLocaleString)) $fromLocaleString = $baseLocaleString;
@@ -130,7 +137,8 @@
 			)
 			.filter((value, index, array) => array.indexOf(value) === index)
 			.sort();
-		if (!toLocaleStrings.includes($toLocaleString)) $toLocaleString = toLocaleStrings[0];
+		if (!toLocaleStrings.includes($toLocaleString) && toLocaleStrings.length > 0)
+			$toLocaleString = toLocaleStrings[0];
 	}
 	$: {
 		conjunctsIndeterminate = $withConjuncts === 1;
@@ -178,12 +186,12 @@
 				{/each}
 			</select>
 			<button
+				class="option-button material-symbols-outlined"
 				on:click={() => {
-					let localeString = $fromLocaleString;
+					const temp = $fromLocaleString;
 					$fromLocaleString = $toLocaleString;
-					$toLocaleString = localeString;
-				}}
-				class="material-symbols-outlined">keyboard_double_arrow_right</button
+					$toLocaleString = temp;
+				}}>keyboard_double_arrow_right</button
 			>
 			<select class="option-button to-locale" bind:value={$toLocaleString}>
 				{#each toLocaleStrings as localeString}
@@ -259,8 +267,7 @@
 						}}
 					/>
 					<label class="option-button icon" for="digits">
-						<!-- {transliterate('sa-Deva', $fromLocaleString, '१')} -->
-						१
+						{transliterate('sa-Deva', $fromLocaleString, '१')}
 					</label>
 				</form>
 			{/if}

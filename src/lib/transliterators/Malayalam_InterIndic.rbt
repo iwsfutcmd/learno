@@ -8,6 +8,11 @@
 
 # Malayalam-InterIndic
 :: NFD;
+
+\u0D46\u0D3E→\uE04A;
+\u0D47\u0D3E→\uE04B;
+\u0D46\u0D57→\uE04C;
+
 ഁ→\uE001;
 ം→\uE002;      # SIGN ANUSVARA
 ഃ→\uE003;      # SIGN VISARGA
